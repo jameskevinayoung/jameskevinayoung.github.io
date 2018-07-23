@@ -1,0 +1,8 @@
+"git" is a VCS for tracking individual line changes across files
+
+a "repository"  or "repo" is a regular file that has been told to work with git
+
+"git init" is a command we run one time per project to tell a  folder that we're going to use git to track changes
+
+"git status" shows you what files are tracked, what if anything has changed
+
