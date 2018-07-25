@@ -6,7 +6,7 @@
     </head>
     <body>
         <form method="POST" action="https://request-inspector.glitch.me/">
-            <section>Registration</section>
+            <section>Registration</section> <!--Semantic tag instead of a "DIV" for this practice-->
             <hr>
 
                 <label for="email">Email Address</label>
@@ -18,17 +18,17 @@
                 <br>
 
                 <label for="biography">BIO</label>
-                <textarea id="biography" maxlength="500" name="biography"></textarea>
+                <textarea id="biography" maxlength="500" name="biography"></textarea><!--the "NAME" attribute identifies the "TEXTAREA" data and pushes it to the server-->
                 <br>
 
             <section>How did you hear about us?</section>
             <hr>
 
-                <input type="radio" id="billboard" name="advertisement" value="billboard"> <!-- The name of the input attribute for radio buttons must be the same for all options to select one at a time-->
+                <input type="radio" id="billboard" name="advertisement" value="billboard"> <!-- To select one option at a time "NAME" must be the same on all options-->
                 <label for="billboard">Billboard</label>
                 <br>
 
-                <input type="radio" id="radio" name="advertisement" value="radio">
+                <input type="radio" id="radio" name="advertisement" value="radio"> <!--The "VALUE" attribute helps you identify which response was picked -->
                 <label for="radio">Radio Advertisement</label>
                 <br>
 
