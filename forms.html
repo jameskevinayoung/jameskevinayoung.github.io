@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register With US</title>
+    </head>
+    <body>
+        <form method="POST" action="https://request-inspector.glitch.me/">
+            <section>Registration</section>
+            <hr>
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email">
+                <br>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <br>
+
+                <label for="biography">BIO</label>
+                <textarea id="biography" maxlength="500" name="biography"></textarea>
+                <br>
+
+            <section>How did you hear about us?</section>
+            <hr>
+
+                <input type="radio" id="billboard" name="advertisement" value="billboard"> <!-- The name of the input attribute for radio buttons must be the same for all options to select one at a time-->
+                <label for="billboard">Billboard</label>
+                <br>
+
+                <input type="radio" id="radio" name="advertisement" value="radio">
+                <label for="radio">Radio Advertisement</label>
+                <br>
+
+                <input type="radio" id="internet" name="advertisement" value="internet">
+                <label for="internet">Internet Advertisement</label>
+                <br>
+
+                <input type="radio" id="other" name="advertisement" value="other">
+                <label for="other">Other</label>
+                <br>
+
+            <section>Which browser do you use?</section>
+            <hr>
+                <label>Web Browser</label>
+                <select name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="ie">Internet Explorer</option>
+                    <option value="safari">Safari</option>
+                    <option value="firefox">FireFox</option>
+                </select>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
