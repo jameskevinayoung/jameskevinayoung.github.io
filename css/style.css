@@ -1,0 +1,38 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    /*background: linear-gradient(to bottom right,black,red,green,black);*/
+    /*background: radial-gradient(circle,black 15%,red 25%,green 70%);*/
+}
+
+p{
+    /*width: 300px;*/
+    /*border: 10px; color: black;*/
+    /*padding: 10px;*/
+    /*margin: 10px;*/
+    /*font-size: 1.6em;*/
+}
+
+strong {
+    /*background-color:orangered;*/
+}
+
+em {
+    /*color:honeydew;*/
+    /*font-weight: bolder;*/
+}
+
+.beginend {
+    /*background-color:cornflowerblue;*/
+
+}
+#important{
+    /*font-size: 2em;*/
+}
+
+.fancyheader{
+    text-decoration: underline;
+    text-align: center;
+    color: blue;
+
+}
+
