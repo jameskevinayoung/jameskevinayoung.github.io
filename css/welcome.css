@@ -1,5 +1,8 @@
 body {
-    background-image: url("");
+    background-image: url("../img/artificial-intelligence-background-11.jpg");
+    width: 1280px;
+    height: 914px;
+    color: blanchedalmond;
 }
 #top {
     text-align: center;
