@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+    <body>
+        <form method="POST" action="https://request-inspector.glitch.me">
+            <p>
+                <label for="username">Username</label><!--"REQUIRED" specifies that an input field must be filled out before submitting the form -->
+                <input type="text" id="username" name="username" required autofocus> <!--"AUTOFOCUS" places cursor automatically into the text field-->
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </p>
+            <p>
+                <label for="newsletter">Sign me up to the newsletter</label>
+                <input type="checkbox" id="newsletter" name="newsletter" value="receive_newsletter" checked><!--"CHECKED" default selects the checkbox-->
+            </p>
+            <button>Create New Account!</button>
+        </form>
+    </body>
+</html>
