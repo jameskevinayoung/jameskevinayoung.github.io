@@ -1,3 +1,12 @@
-#top{
+body {
+    background-image: url("");
+}
+#top {
     text-align: center;
+}
+h1 {
+    color:blanchedalmond
+}
+h2 {
+    color:blanchedalmond
 }
