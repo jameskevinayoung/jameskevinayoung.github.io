@@ -1,50 +1,43 @@
-body, html {
+body, html {/*these attributes are throughout the entire page*/
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
+
 }
-.message-info{
-    color: #5858a8;
-    background-color: #cedffe;
+:root{ /*This psuedo class affects each class with the specific variables*/
+    --bg-info:#cedffe;
+    --text-info:#5858a8;
+    --bg-success:#d0f3db;
+    --text-success:#428a5e;
+    --bg-warning: #fcfacb;
+    --text-warning:#9b8a39;
+    --bg-error:#f9d3d8;
+    --text-error:#8f3249;
+}
+
+/* keep your code simplistic in format. Find the best way to deploy your work that is easiest to read.*/
+
+.message {/*These attributes are consistent with each message class regardless of the secondary class.*/
     margin: .5em;
     padding: .5em;
     border: solid #d3d3d3 thin;
     border-radius: .5em;
+}
+.message-info{ /*Variables from the root go into the specific secondary class in this exercise.*/
+    color: var(--text-info);
+    background-color: var(--bg-info);
 }
 .message-success{
-    color: #428a5e;
-    background-color: #d0f3db;
-    margin: .5em;
-    padding: .5em;
-    border: solid #d3d3d3 thin;
-    border-radius: .5em;
+    color: var(--text-success);
+    background-color: var(--bg-success);
 }
 .message-warning{
-    color: #9b8a39;
-    background-color: #fcfacb;
-    margin: .5em;
-    padding: .5em;
-    border: solid #d3d3d3 thin;
-    border-radius: .5em;
+    color: var(--text-warning);
+    background-color: var(--bg-warning);
 }
 .message-error{
-    color: #8f3249;
-    background-color: #f9d3d8;
-    margin: .5em;
-    padding: .5em;
-    border: solid #d3d3d3 thin;
-    border-radius: .5em;
+    color: var(--text-error);
+    background-color: var(--bg-error);
 }
-
-/*var bg-info*/
-/*var text-info*/
-/*var bg-success*/
-/*var text-success*/
-/*var bg-warning*/
-/*var text-warning*/
-/*var bg-error*/
-/*var text-error*/
-
-/*body{background-color: orange}*/
