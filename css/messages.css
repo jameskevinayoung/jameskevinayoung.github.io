@@ -19,7 +19,8 @@ body, html {/*these attributes are throughout the entire page*/
 
 /* keep your code simplistic in format. Find the best way to deploy your work that is easiest to read.*/
 
-.message {/*These attributes are consistent with each message class regardless of the secondary class.*/
+.message {/*These attributes are consistent with each message class regardless of the secondary class.
+Refactoring means changing the code structure but its function*/
     margin: .5em;
     padding: .5em;
     border: solid #d3d3d3 thin;
