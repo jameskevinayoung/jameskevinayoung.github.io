@@ -6,12 +6,37 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 .message-info{
-    background-color: #add8e6;
-
+    color: #5858a8;
+    background-color: #cedffe;
+    margin: .5em;
+    padding: .5em;
+    border: solid #d3d3d3 thin;
+    border-radius: .5em;
 }
-/*.message message-success{}*/
-/*.message message-warning{}*/
-/*.message message-error{}*/
+.message-success{
+    color: #428a5e;
+    background-color: #d0f3db;
+    margin: .5em;
+    padding: .5em;
+    border: solid #d3d3d3 thin;
+    border-radius: .5em;
+}
+.message-warning{
+    color: #9b8a39;
+    background-color: #fcfacb;
+    margin: .5em;
+    padding: .5em;
+    border: solid #d3d3d3 thin;
+    border-radius: .5em;
+}
+.message-error{
+    color: #8f3249;
+    background-color: #f9d3d8;
+    margin: .5em;
+    padding: .5em;
+    border: solid #d3d3d3 thin;
+    border-radius: .5em;
+}
 
 /*var bg-info*/
 /*var text-info*/
@@ -21,3 +46,5 @@ body, html {
 /*var text-warning*/
 /*var bg-error*/
 /*var text-error*/
+
+/*body{background-color: orange}*/
