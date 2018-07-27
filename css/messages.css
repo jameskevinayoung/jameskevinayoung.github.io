@@ -6,20 +6,16 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 .message message-info{
-    background-color: lightskyblue;
+    color: black;
+    background-color: lightblue;
+    margin: 1em;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
 }
-.message message-success{
-    background-color: lightskyblue;
-
-}
-.message message-warning{
-    background-color: lightskyblue;
-
-}
-.message message-error{
-    background-color: lightskyblue;
-
-}
+/*.message message-success{}*/
+/*.message message-warning{}*/
+/*.message message-error{}*/
 
 /*var bg-info*/
 /*var text-info*/
