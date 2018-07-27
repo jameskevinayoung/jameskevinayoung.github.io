@@ -6,7 +6,7 @@ body, html {/*these attributes are throughout the entire page*/
     font-family: Arial, Ubuntu, sans-serif;
 
 }
-:root{ /*This psuedo class affects each class with the specific variables*/
+:root{ /*This pseudo class affects each class with the specific variables*/
     --bg-info:#cedffe;
     --text-info:#5858a8;
     --bg-success:#d0f3db;
