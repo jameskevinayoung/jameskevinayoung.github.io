@@ -5,13 +5,9 @@ body, html {
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
 }
-.message message-info{
-    color: black;
-    background-color: lightblue;
-    margin: 1em;
-    width: 1em;
-    height: 1em;
-    display: inline-block;
+.message-info{
+    background-color: #add8e6;
+
 }
 /*.message message-success{}*/
 /*.message message-warning{}*/
