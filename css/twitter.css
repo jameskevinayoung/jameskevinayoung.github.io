@@ -63,6 +63,7 @@ a {
     float: left;
     /*margin: 0 0.5em;*/
     width: 25%;
+
 }
 .timeline{
     float: left;
@@ -77,6 +78,11 @@ a {
 .profile-image{
     position:absolute;
     top:15em;
+}
+.profile-items {
+    list-style-type: none;
+    padding: 0em;
+
 }
 .container {
 
@@ -107,15 +113,17 @@ a {
 .media-image {
     max-width: 3.125em;
     float: left;
+    position: relative;
+    top: 1.5em;
 }
 .media-body {
     float: left;
     width: calc(100% - 3.125em);
 }
 .profile-entry {
-    list-style-type: none;
-    margin: 0;
+    margin: 0.5em;
     padding: 0;
+
 }
 
 .img-circle {
