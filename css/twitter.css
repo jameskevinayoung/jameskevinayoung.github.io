@@ -26,6 +26,7 @@ header {
 a {
     color: var(--link-color);
 }
+
 .top-nav {
     position: fixed;
     background: var(--light-bg);
@@ -53,16 +54,21 @@ a {
     background: var(--light-bg);
 }
 .who-to-follow {
-    float: right;
-    margin: 0 0.5em;
+    float: left;
+    /*margin: 0 0.5em;*/
+    width: 25%;
+
 }
 .profile-details{
     float: left;
-    margin: 0 0.5em;
+    /*margin: 0 0.5em;*/
+    width: 25%;
 }
 .timeline{
-    float: right;
-    margin: 0 0.5em;
+    float: left;
+    /*margin: 0 0.5em;*/
+    width: 50%;
+    padding: 0 .5em;
 }
 
 .profile-form {
@@ -71,6 +77,11 @@ a {
 .profile-image{
     position:absolute;
     top:15em;
+}
+.container {
+
+    margin: 2em;
+
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -86,9 +97,27 @@ a {
     margin-top: .8em;
 
 }
-.media-image {
-
+.media {
+    width:100%;
+    background-color: var(--light-bg);
+    border: 1px solid var(--separator-color);
+    padding: .5em;
+    overflow: auto;
 }
+.media-image {
+    max-width: 3.125em;
+    float: left;
+}
+.media-body {
+    float: left;
+    width: calc(100% - 3.125em);
+}
+.profile-entry {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .img-circle {
     border-radius: 100%;
     border: 4px solid var(--light-bg);
