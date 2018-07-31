@@ -1,1 +1,83 @@
-/*element selectors*/
+/*Step 1: fix the max width of the body of the document*/
+/*Step 2: create  the same border for all box-styles 1px solid border*/
+/*Step 3: create background colors for each section/div*/
+body {
+    max-width:100%;
+    background-color: yellowgreen;
+}
+
+
+
+/*skip main content button*/
+.hidden-on-desktop{
+    box-sizing: border-box;
+    border: 0.125em solid gray;
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 0.7em 0 0 0;
+    height: 3em;
+}
+div.alert-info>a:link { /*This needed to be hard coded from div with class "alert-infor" than child (>) anchor link*/
+    text-decoration:none; /*This area affects the text inside the div*/
+    color: #000000;
+}
+
+
+
+
+/*main Main header (H1) */
+h1 {
+    /*background-color: cyan;*/
+    text-align: center;
+    font-size: 300%;
+    margin-top: 12px;
+}
+
+
+/*Navigation buttons*/
+nav {
+    background-color: salmon;
+}
+ul{
+    margin: 0; /*gets rid of default padding/margin*/
+    padding: 0;
+    list-style-type: none;/*gets rid of bullets in list*/
+    text-align: center;
+}
+li {
+    box-sizing: border-box;
+    border: 0.125em solid gray;
+    background-color: gray;
+    text-align: center;
+    padding: 0.7em 0 0 0;
+    height: 3em;
+    margin-bottom: .5em;
+
+}
+
+/*Header image*/
+img{
+    height: auto;
+    width: 100%;
+}
+
+
+
+/*Main section*/
+.main{
+    background-color: forestgreen;
+}
+
+
+
+/*Sub-section*/
+.sub-section{
+    background-color: firebrick;
+}
+
+
+
+/*Footer section*/
+footer{
+    background-color: pink;
+}
