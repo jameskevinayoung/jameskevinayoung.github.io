@@ -8,7 +8,6 @@ body html {
 }
 
 
-
 /* mobile device widths from 320px to 800px converted to em*/
 @media screen and (min-device-width:20em) and (max-device-width:50em){
     div.header-img>img{
