@@ -3,7 +3,7 @@
 /*Step 3: create background colors for each section/div*/
 
 body {
-    max-width: 100%;
+    /*max-width: 100%;*/
     margin: 3em;
     font-family: sans-serif;
 }
@@ -59,7 +59,7 @@ body {
     /*Header image*/
     img {
         height: auto;
-        width: 100%;
+        /*width: 100%;*/
     }
 
     /*Main section*/
@@ -81,7 +81,7 @@ body {
     footer {
         background-color: transparent;
         display: inline-block;
-        width: 100%;
+        /*width: 100%;*/
         padding-top: 4em;
     }
     footer>p {
@@ -95,7 +95,7 @@ body {
     div.social-media>ul>li{
         padding-right: .5em;
         font-size: 30px;
-        width: 30px;
+        /*width: 30px;*/
         float: right;
         display: inline;
     }
@@ -115,7 +115,7 @@ body {
         text-align: left;
         font-size: 200%;
         margin-top: 12px;
-        width: 50%;
+        /*width: 50%;*/
     }
 
     /*Navigation buttons*/
@@ -139,12 +139,12 @@ body {
     /*Header image*/
     img {
         height: auto;
-        width: 100%;
+        /*width: 100%;*/
     }
 
     /*Main section*/
     .main {
-        width: 55%;
+        /*width: 55%;*/
         float: left;
         margin-top: 2em;
     }
@@ -156,7 +156,7 @@ body {
         background-color: transparent;
         box-sizing: content-box;
         border: 0;
-        width: 40%;
+        /*width: 40%;*/
         float: right;
         margin-top: 2.5em;
 
@@ -172,7 +172,7 @@ body {
     footer {
         background-color: transparent;
         clear:both;
-        width: 100%;
+        /*width: 100%;*/
         padding-top: 4em;
 
     }
@@ -186,7 +186,7 @@ body {
     div.social-media>ul>li { /*to make icons*/
         padding-right: .5em;
         font-size: 30px;
-        width: 30px;
+        /*width: 30px;*/
         text-decoration: none;
         float: right;
         display: inline;

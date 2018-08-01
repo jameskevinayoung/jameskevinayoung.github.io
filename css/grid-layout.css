@@ -16,46 +16,64 @@
 .column {
     float: left;
     padding: 10px;
-    background-color: salmon;
     border: 2px solid white;
     box-sizing: border-box;
     width: 8.33%;
 }
-.column.one-half {
-    width: 50%;
-    background-color: crimson;
+.full,
+.two-thirds,
+.one-half,
+.one-third,
+.one-fourth,
+.one-sixth,
+.one-eighth,{
+    width:100%;
 }
-.column.one-third {
-    width: 33.33%;
-    background-color: darkgoldenrod;
-}
-.column.one-quarter {
-    width: 25%;
-    background-color: forestgreen;
-}
-.column.one-fifth {
-    width: 20%;
-    background-color: seashell;
-}
-.column.one-sixth {
-    width: 16.66%;
-}
-.column.one-eighth {
-    width: 12.5%;
-    background-color: wheat;
-}
-.column.one-twelfth {
-    width: 8.33%;
-    background-color: darkorchid;
-}
-/* Screen Responsiveness challenge: to have a layout with columns that take up
-a certain amount of width on larger screen sizes, but that take up the full width
-on smaller screen sizes.*/
+im{max-width:100%}
 
-@media screen and (max-width:768px) { /*this sets the max width of the screen*/
-    .column.one-third, /*This designates which selectors (columns) are affected*/
-    .column.one-half {
-        width:100%; /*This designates the CSS to override everything and make the
-        columns width 100%*/
+@media screen and (min-width:760px){
+    .two-thirds {width:66.66666%;}
+    .one-half {width:50%;}
+    .one-third {width:33.33333%;}
+    .one-fourth {width:25%;}
+    .one-sixth {width:16.66666%;}
+    .one-eighth {width:12.5%;}
+    .one-half-offset {
+        margin-left:50%;
     }
 }
+
+
+
+/*.column.one-half {*/
+    /*width: 50%;*/
+/*}*/
+/*.column.one-third {*/
+    /*width: 33.33%;*/
+/*}*/
+/*.column.one-quarter {*/
+    /*width: 25%;*/
+/*}*/
+/*.column.one-fifth {*/
+    /*width: 20%;*/
+/*}*/
+/*.column.one-sixth {*/
+    /*width: 16.66%;*/
+/*}*/
+/*.column.one-eighth {*/
+    /*width: 12.5%;*/
+/*}*/
+/*.column.one-twelfth {*/
+    /*width: 8.33%;*/
+/*}*/
+/*!* Screen Responsiveness challenge: to have a layout with columns that take up*/
+/*a certain amount of width on larger screen sizes, but that take up the full width*/
+/*on smaller screen sizes.*!*/
+
+/*@media screen and (max-width:768px) { !*this sets the max width of the screen*!*/
+    /*.column.one-third, !*This designates which selectors (columns) are affected*!*/
+    /*.column.one-half {*/
+        /*width:100%; !*This designates the CSS to override everything and make the*/
+        /*columns width 100%*!*/
+    /*}*/
+/*}*/
