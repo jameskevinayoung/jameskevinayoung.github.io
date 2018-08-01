@@ -4,6 +4,7 @@
 
 body {
     max-width: 100%;
+    font-family: sans-serif;
 }
 
 @media screen and (max-width:780px) {
@@ -67,12 +68,18 @@ body {
 
     /*Sub-section*/
     .sub-section {
-        background-color: firebrick;
+        background-color: transparent;
         font-style: italic;
+        padding-top: 1em;
+    }
+    .sub-section>h2 {
+        font-size: 120%;
+
     }
 
     /*Footer section*/
     footer {
         background-color: pink;
+
     }
 }
