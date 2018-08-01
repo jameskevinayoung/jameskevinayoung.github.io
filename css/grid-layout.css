@@ -26,10 +26,10 @@
 .one-third,
 .one-fourth,
 .one-sixth,
-.one-eighth,{
+.one-eighth,.column{
     width:100%;
 }
-im{max-width:100%}
+img {max-width:100%}
 
 @media screen and (min-width:760px){
     .two-thirds {width:66.66666%;}
