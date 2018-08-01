@@ -4,6 +4,7 @@
 
 body {
     max-width: 100%;
+    margin: 3em;
     font-family: sans-serif;
 }
 
@@ -37,14 +38,14 @@ body {
         background-color: transparent;
     }
 
-    ul {
+    nav>ul {
         margin: 0; /*gets rid of default padding/margin*/
         padding: 0;
         list-style-type: none; /*gets rid of bullets in list*/
         text-align: center;
     }
 
-    li {
+    nav>ul>li {
         box-sizing: border-box;
         border: 0.125em solid gray;
         background-color: gray;
@@ -82,66 +83,59 @@ body {
         display: inline-block;
         width: 100%;
         padding-top: 4em;
-
     }
-    #social-media-links { /*to make icons*/
-        padding: 20px;
+    footer>p {
+        width:50%;
+        margin: 0;
+        padding: 0;
+    }
+    .social-media{
+        float:right;
+    }
+    div.social-media>ul>li{
+        padding-right: .5em;
         font-size: 30px;
         width: 30px;
-        text-decoration: none;
         float: right;
-        position: relative;
-        top: -2em;
-        left: -2em;
+        display: inline;
     }
 }
 
-@media screen and (min-width:48.75em) {
-    .hidden-on-desktop {
-        box-sizing: border-box;
-        border: 0.125em solid gray;
-        background-color: lightskyblue;
-        text-align: center;
-        padding: 0.7em 0 0 0;
-        height: 3em;
-    }
 
-    div.alert-info > a:link { /*This needed to be hard coded from div with class "alert-infor" than child (>) anchor link*/
-        text-decoration: none; /*This area affects the text inside the div*/
-        color: #000000;
+/*Screens 780px or greater*/
+
+@media screen and (min-width:48.75em) {
+    .alert-info {
+        display: none;
     }
 
     /*main Main header (H1) */
     h1 {
-        /*background-color: cyan;*/
-        text-align: center;
-        font-size: 300%;
+        background-color: transparent;
+        text-align: left;
+        font-size: 200%;
         margin-top: 12px;
+        width: 50%;
     }
 
     /*Navigation buttons*/
     nav {
-        background-color: transparent;
+        background-color: forestgreen;
+
     }
+
 
     ul {
-        margin: 0; /*gets rid of default padding/margin*/
+        list-style-type: none;
+        margin: -2.75em -1em 0 0;
         padding: 0;
-        list-style-type: none; /*gets rid of bullets in list*/
-        text-align: center;
-    }
-
-    li {
-        box-sizing: border-box;
-        border: 0.125em solid gray;
-        background-color: gray;
-        text-align: center;
-        padding: 0.7em 0 0 0;
-        height: 3em;
-        margin-bottom: .5em;
+        float: right;
 
     }
-
+    li{
+        display: inline;
+        padding: 0 1em 0 0;
+    }
     /*Header image*/
     img {
         height: auto;
@@ -150,35 +144,51 @@ body {
 
     /*Main section*/
     .main {
-        background-color: transparent;
+        width: 55%;
+        float: left;
+        margin-top: 2em;
     }
+
 
     /*Sub-section*/
     .sub-section {
         font-style: italic;
-        padding-top: 1em;
+        background-color: transparent;
+        box-sizing: content-box;
+        border: 0;
+        width: 40%;
+        float: right;
+        margin-top: 2.5em;
+
     }
     .sub-section>h2 {
         font-size: 120%;
+
+
 
     }
 
     /*Footer section*/
     footer {
         background-color: transparent;
-        display: inline-block;
+        clear:both;
         width: 100%;
         padding-top: 4em;
 
     }
-    #social-media-links { /*to make icons*/
-        padding: 20px;
+    .social-media>ul{
+        list-style-type: none;
+        margin: -3em 0 0 0;
+        padding: 0;
+        float: right;
+
+    }
+    div.social-media>ul>li { /*to make icons*/
+        padding-right: .5em;
         font-size: 30px;
         width: 30px;
         text-decoration: none;
         float: right;
-        position: relative;
-        top: -2em;
-        left: -2em;
+        display: inline;
     }
 }
