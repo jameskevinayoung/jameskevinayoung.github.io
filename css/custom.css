@@ -1,0 +1,22 @@
+
+
+.jumbotron{
+    width:100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.container-fluid{
+    padding:0 0 0 0;
+
+}
+
+.display-4 {
+    color: #000;
+    background-color: aliceblue;
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: -3.5em;
+    opacity: .5;
+}
