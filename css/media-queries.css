@@ -7,7 +7,7 @@ body {
     font-family: sans-serif;
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:48.75em) {
 
     /*skip main content button*/
     .hidden-on-desktop {
@@ -34,7 +34,7 @@ body {
 
     /*Navigation buttons*/
     nav {
-        background-color: salmon;
+        background-color: transparent;
     }
 
     ul {
@@ -63,12 +63,11 @@ body {
 
     /*Main section*/
     .main {
-        background-color: forestgreen;
+        background-color: transparent;
     }
 
     /*Sub-section*/
     .sub-section {
-        background-color: transparent;
         font-style: italic;
         padding-top: 1em;
     }
@@ -79,7 +78,107 @@ body {
 
     /*Footer section*/
     footer {
-        background-color: pink;
+        background-color: transparent;
+        display: inline-block;
+        width: 100%;
+        padding-top: 4em;
 
+    }
+    #social-media-links { /*to make icons*/
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-decoration: none;
+        float: right;
+        position: relative;
+        top: -2em;
+        left: -2em;
+    }
+}
+
+@media screen and (min-width:48.75em) {
+    .hidden-on-desktop {
+        box-sizing: border-box;
+        border: 0.125em solid gray;
+        background-color: lightskyblue;
+        text-align: center;
+        padding: 0.7em 0 0 0;
+        height: 3em;
+    }
+
+    div.alert-info > a:link { /*This needed to be hard coded from div with class "alert-infor" than child (>) anchor link*/
+        text-decoration: none; /*This area affects the text inside the div*/
+        color: #000000;
+    }
+
+    /*main Main header (H1) */
+    h1 {
+        /*background-color: cyan;*/
+        text-align: center;
+        font-size: 300%;
+        margin-top: 12px;
+    }
+
+    /*Navigation buttons*/
+    nav {
+        background-color: transparent;
+    }
+
+    ul {
+        margin: 0; /*gets rid of default padding/margin*/
+        padding: 0;
+        list-style-type: none; /*gets rid of bullets in list*/
+        text-align: center;
+    }
+
+    li {
+        box-sizing: border-box;
+        border: 0.125em solid gray;
+        background-color: gray;
+        text-align: center;
+        padding: 0.7em 0 0 0;
+        height: 3em;
+        margin-bottom: .5em;
+
+    }
+
+    /*Header image*/
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    /*Main section*/
+    .main {
+        background-color: transparent;
+    }
+
+    /*Sub-section*/
+    .sub-section {
+        font-style: italic;
+        padding-top: 1em;
+    }
+    .sub-section>h2 {
+        font-size: 120%;
+
+    }
+
+    /*Footer section*/
+    footer {
+        background-color: transparent;
+        display: inline-block;
+        width: 100%;
+        padding-top: 4em;
+
+    }
+    #social-media-links { /*to make icons*/
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-decoration: none;
+        float: right;
+        position: relative;
+        top: -2em;
+        left: -2em;
     }
 }
