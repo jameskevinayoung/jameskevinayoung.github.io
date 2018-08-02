@@ -1,22 +1,21 @@
 
-
 .jumbotron{
-    width:100%;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    background-image: url("../img/pizza.png");
+    width: 100%;
 }
 .container-fluid{
-    padding:0 0 0 0;
-
+    padding: 0;
+    margin: auto;
+    width: 100%;
 }
 
-.display-4 {
-    color: #000;
-    background-color: aliceblue;
-    float: left;
-    position: relative;
+.display-4{
+    opacity:.5;
+    width:100%;
     text-align: center;
-    width: 100%;
-    top: -3.5em;
-    opacity: .5;
+    color:black;
+    background-color: whitesmoke;
+}
+.badge-secondary{
+    border-radius:50%;
 }
