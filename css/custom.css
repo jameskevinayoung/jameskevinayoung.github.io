@@ -1,15 +1,15 @@
 
-.jumbotron{
+.pizza-jumbotron {
     background-image: url("../img/pizza.png");
     width: 100%;
 }
-.container-fluid{
+.pizza-box {
     padding: 0;
     margin: auto;
     width: 100%;
 }
 
-.display-4{
+.pizza-jumbotron h1 {
     opacity:.5;
     width:100%;
     text-align: center;

@@ -37,25 +37,55 @@
             </a>
         </nav>
 
-        <div class="jumbotron jumbotron-fluid d-none d-md-block">
-            <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid d-none d-md-block pizza-jumbotron">
+            <div class="container-fluid pizza-box">
                 <h1 class="display-4">Welcome to Pizza World!</h1>
             </div>
         </div>
 
         <h2>Build your own pizza!</h2>
         <nav>
-            <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#"><span class="badge badge-secondary">1</span> Size and crust</a> <!--badge secondary as a span-->
+                    <a class="nav-link active" id="size" data-toggle="tab" href="#size" role="tab" aria-controls="size" aria-selected="true"><span class="badge badge-secondary">1</span> Size and crust</a> <!--badge secondary as a span-->
                 </li>
                 <li>
-                    <a class="nav-link" href="#"><span class="badge badge-secondary">2</span> Cheese and sauce</a>
+                    <a class="nav-link" id="cheese" data-toggle="tab" href="#cheese" role="tab" aria-controls="cheese" aria-selected="false"><span class="badge badge-secondary">2</span> Cheese and sauce</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#"><span class="badge badge-secondary">3</span> Toppings</a>
+                    <a class="nav-link" id="toppings" data-toggle="tab" href="#toppings" role="tab" aria-controls="size" aria-selected="false"><span class="badge badge-secondary">3</span> Toppings</a>
                 </li>
             </ul>
         </nav>
+
+        <!--Tabbed content card-->
+        <div class="card">
+            <div class="card-header">
+                <h5>Choose size and crust</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-secondary">Hand Tossed</li>
+                    <l1 class="list-group-item">Garlic seasoned crust with a rich, buttery taste</l1>
+                    <li class="list-group-item"><input type="radio" name="size" value="small"> Small (10")</li>
+                    <li class="list-group-item"><input type="radio" name="size" value="medium"> Medium (12")</li>
+                </ul>
+
+                <br/>
+
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-secondary">Crispy Thin</li>
+                    <li class="list-group-item">Thin enough for optimum crispy to crunchy ratio</li>
+                    <li class="list-group-item"><input type="radio" name="size" value="medium"> Medium (12")</li>
+                    <li class="list-group-item"><input type="radio" name="size" value="large"> Large (14")</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary float-right">Next Step></a>
+            </div>
+        </div>
+
+        <!--This section discribes a card with 2 cards inside of it-->
+
     </body>
 </html>
