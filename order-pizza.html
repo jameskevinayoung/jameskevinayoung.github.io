@@ -67,95 +67,121 @@
                     <a class="nav-link" id="toppings-tab" data-toggle="tab" href="#toppings" role="tab" aria-controls="toppings" aria-selected="false"><span class="badge badge-secondary">3</span> Toppings</a>
                 </li>
             </ul>
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="size-tab">
+                    <div class="card"><!--Begin the first card-->
+                        <div class="card-header bg-primary text-white">Choose size and crust</div>
+                        <div class="card-body">
+                            <!--create first card within card-->
+                            <div class="card my-3">
+                                <div class="card-header">Hand Tossed</div>
+                                <div class="card-body">Garlic seasoned crust with rich, buttery taste.</div>
+                                <ul class="listgroup px-0 mb-0">
+                                    <li class="list-group-item">
+                                        <div class="form-check">
+                                            <input id="small-handtossed" name="size" type="radio" class="form-check-input">
+                                            <label for="small-handtossed"> Small (10") </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check">
+                                            <input id="medium-handtossed" name="size" type="radio" class="form-check-input">
+                                            <label for="medium-handtossed">Medium (12")</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div><!--end the first card-->
+                            <!--create second card with card-->
+                            <div class="card my-3">
+                                <div class="card-header">Crispy Thin</div>
+                                <div class="card-body">Thin enough for optimum crispy to crunchy ratio.</div>
+                                <ul class="listgroup px-0 mb-0">
+                                    <li class="list-group-item">
+                                        <div class="form-check">
+                                            <input id="medium-crispythin" name="size" type="radio" class="form-check-input">
+                                            <label for="medium-crispythin"> Medium (12") </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check">
+                                            <input id="large-crispythin" name="size" type="radio" class="form-check-input">
+                                            <label for="large-crispythin">Large (14")</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--Begin footer-->
+                        <div class="card-footer text-right">
+                            <button class="btn btn-primary">Next ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="card"><!--start cheese and sauce card-->
+                        <div class="card-header bg-primary text-white">Choose cheese and sauce</div>
+                        <div class="card-body">
+
+                            <div class="card my-3"><!--Start first card within card-->
+                                <div class="card-header">Cheese</div>
+                                <div class="form-group">
+                                    <label for="howMuchCheese">How much?</label>
+                                    <select class="custom-select custom-select-md mb-3" name="form-control" id="howMuchCheese">
+                                        <option value="light">Light</option>
+                                        <option value="normal">Normal</option>
+                                        <option value="extra">Extra</option>
+                                        <option value="double">Double</option>
+                                    </select>
+                                </div>
+                            </div> <!--End first card within card-->
+
+                            <div class="card my-3"><!--Start second card within card-->
+                                <div class="card-header">Sauce</div>
+                                <div class="form-group">
+                                    <label for="sauceOption">What Type?</label>
+                                    <select class="custom-select custom-select-md mb-3" name="form-control" id="sauceOption">
+                                        <option value="Tomato sauce">Tomato sauce</option>
+                                        <option value="Marinara sauce">Marinara sauce</option>
+                                        <option value="BBQ Sauce">BBQ Sauce</option>
+                                        <option value="Alfredo Sauce">Alfredo Sauce</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="howMuchSauce">How much?</label>
+                                    <select class="custom-select custom-select-md mb-3" name="form-control" id="howMuchSauce">
+                                        <option value="Light">Light</option>
+                                        <option value="Normal">Normal</option>
+                                        <option value="Extra">Extra</option>
+                                    </select>
+                                </div>
+                            </div><!--End second card within card-->
+                        </div>
+                    </div>
+                    <!--Begin footer-->
+                    <div class="btn-group" style="float:right;" role="group" aria-label="nav buttons">
+                        <button type="button" class="btn btn-primary"><a href="#size-tab" class="btn btn-primary">< Previous Step</a></button>
+                        <button type="button" class="btn btn-primary"><a href="#toppings-tab" class="btn btn-primary">Next Step ></a></button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                </div>
+            </div>
         </nav>
 
-        <!--Begin the first card-->
 
-            <div class="card">
-                <div class="card-header bg-primary text-white">Choose size and crust</div>
-                <div class="card-body">
 
-                    <!--create first card within card-->
 
-                    <div class="card my-3">
-                        <div class="card-header">Hand Tossed</div>
-                        <div class="card-body">Garlic seasoned crust with rich, buttery taste.</div>
-                        <ul class="listgroup px-0 mb-0">
-                            <li class="list-group-item">
-                                <div class="form-check">
-                                    <input id="small-handtossed" name="size" type="radio" class="form-check-input">
-                                    <label for="small-handtossed"> Small (10") </label>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="form-check">
-                                    <input id="medium-handtossed" name="size" type="radio" class="form-check-input">
-                                    <label for="medium-handtossed">Medium (12")</label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--create second card with card-->
-                    <div class="card my-3">
-                        <div class="card-header">Crispy Thin</div>
-                        <div class="card-body">Thin enough for optimum crispy to crunchy ratio.</div>
-                        <ul class="listgroup px-0 mb-0">
-                            <li class="list-group-item">
-                                <div class="form-check">
-                                    <input id="medium-crispythin" name="size" type="radio" class="form-check-input">
-                                    <label for="medium-crispythin"> Medium (12") </label>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="form-check">
-                                    <input id="large-crispythin" name="size" type="radio" class="form-check-input">
-                                    <label for="large-crispythin">Large (14")</label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
 
-                </div>
 
-                <!--Begin footer-->
-                <div class="card-footer text-right">
-                    <button class="btn btn-primary">Next ></button>
-                </div>
-            </div>
 
-            <div class="card">
-                <div class="card-header bg-primary text-white">Choose cheese and sauce</div>
-                <div class="card-body">
-                    <div class="card-header">Cheese</div>
-                    <div class="form-group">
-                        <label for="howMuchCheese">How much?</label>
-                        <select name="form-control" id="howMuchCheese">
-                            <option value="Light"></option>
-                            <option value="Normal"></option>
-                            <option value="Extra"></option>
-                            <option value="Double"></option>
-                        </select>
-                    </div>
-                    <div class="card-header">Sauce</div>
-                    <div class="form-group">
-                        <label for="sauceOption">What Type?</label>
-                        <select name="form-control" id="sauceOption">
-                            <option value="Tomato sauce"></option>
-                            <option value="Marinara sauce"></option>
-                            <option value="BBQ Sauce"></option>
-                            <option value="Alfredo Sauce"></option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="howMuchSauce">How much?</label>
-                        <select name="form-control" id="howMuchSauce">
-                            <option value="Light"></option>
-                            <option value="Normal"></option>
-                            <option value="Extra"></option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+
+       <!-- <div class="card-footer text-right">
+                <button class="btn btn-primary">Next ></button>
+            </div>-->
             
             
 
