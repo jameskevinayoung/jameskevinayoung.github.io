@@ -59,12 +59,17 @@
         </nav>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-crust-size" role="tabpanel" aria-labelledby="nav-crust-tab">
-                <!--Size and Crust primary card-->
+                <!--############################################
+                |                                               |
+                |Begin size and crust primary card              |
+                |                                               |
+                |                                               |
+                ##############################################-->
                 <div class="card">
                     <div class="card-header bg-primary text-white">Choose size and crust</div>
                     <div class="card-body">
 
-     <!-----------Begin 1st card in primary card-->
+                <!-----------Begin 1st card in primary card-->
                         <div class="card">
                             <div class="card-header">Hand Tossed</div>
                             <div class="card-body">Garlic seasoned crust with a rich, buttery taste.</div>
@@ -83,7 +88,7 @@
                                 </li>
                             </ul>
                         </div>
-     <!-----------End of 1st card in primary card-->
+                <!-----------End of 1st card in primary card-->
                         <br/>
                         <div class="card">
                             <div class="card-header">Crispy Thin</div>
@@ -105,13 +110,78 @@
                         </div>
                     </div>
                     <footer>
-                        <a href="#nav-cheese-sauce" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> Next ></a>
+                        <a href="#nav-cheese-tab" class="btn btn-primary btn-lg active float-right" role="button" aria-pressed="true"> Next ></a>
                     </footer>
                 </div>
-                <!--Size and Crust primary card-->
+                <!--############################################
+                |                                               |
+                |End size and crust primary card                |
+                |                                               |
+                |                                               |
+                ##############################################-->
 
             </div>
-            <div class="tab-pane fade" id="nav-cheese-sauce" role="tabpanel" aria-labelledby="nav-cheese-tab">..2</div>
+            <div class="tab-pane fade" id="nav-cheese-sauce" role="tabpanel" aria-labelledby="nav-cheese-tab">
+                <!--############################################
+                |                                               |
+                |Begin cheese and sauce primary card              |
+                |                                               |
+                |                                               |
+                ##############################################-->
+                <div class="card">
+                    <div class="card-header bg-primary text-white">Choose Cheese and Sauce</div>
+                    <div class="card-body">
+                        <!-----------Begin 1st card in primary card-->
+                        <div class="card">
+                            <div class="card-header">Cheese</div>
+                            <div class="card-body cheese-card">How much?</div>
+                            <div class="form-group pl-3 pr-3 pb-3">
+                                <select class="form-control cheese-amount" id="howMuchCheese">
+                                    <option>Light</option>
+                                    <option selected>Normal</option>
+                                    <option>Extra (+ $1.50)</option>
+                                    <option>Double(+ $2.50)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-----------End of 1st card in primary card-->
+                        <br>
+
+                        <!-----------Begin 2nd card in primary card-->
+                        <div class="card">
+                            <div class="card-header">Sauce</div>
+                            <div class="card-body sauce-card">What type?</div>
+                            <div class="form-group pl-3 pr-3 pb-3">
+                                <select class="form-control sauce-type" id="pickSauce">
+                                    <option>Tomato Sauce</option>
+                                    <option selected>Marinara Sauce</option>
+                                    <option>BBQ Sauce</option>
+                                    <option>Alfredo Sauce</option>
+                                </select>
+                            </div>
+                            <div class="card-body sauce-card">How Much?</div>
+                            <div class="form-group pl-3 pr-3 pb-3">
+                                <select class="form-control sauce-type" id="howMuchSauce">
+                                    <option>Light</option>
+                                    <option selected>Normal</option>
+                                    <option>Extra (+ $1.50)</option>
+                                    <option>Double(+ $2.50)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="btn-group float-right" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary float-right">< Previous</button>
+                            <button type="button" class="btn btn-primary float-right">Next ></button>
+                        </div>
+                    </footer>
+                        <!-----------End of 2nd card in primary card-->
+            </div>
+
+
+
+
             <div class="tab-pane fade" id="nav-toppings" role="tabpanel" aria-labelledby="nav-toppings-tab">..3</div>
         </div>
     </main>
