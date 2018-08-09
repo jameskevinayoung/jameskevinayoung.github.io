@@ -10,12 +10,12 @@
  */
 
 
-// var name = prompt("What is your name?");
-// function sayHello(name) {
-//     return "Hello, " + name;
-//
-// }
-// console.log(sayHello(name));
+var name = prompt("What is your name?");
+function sayHello(name) {
+    return "Hello, " + name;
+
+}
+console.log(sayHello(name));
 
 
 
@@ -27,8 +27,8 @@
  * console.log 'helloMessage' to check your work
  */
 
-// var helloMessage = sayHello("James");
-// console.log(helloMessage);
+var helloMessage = sayHello("James");
+console.log(helloMessage);
 
 
 /**
@@ -37,8 +37,8 @@
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-// var myName = sayHello("James")
-// console.log(myName)
+var myName = sayHello("James")
+console.log(myName)
 
 
 // Don't modify the following line, it generates a random number between 1 and 3
@@ -70,6 +70,8 @@ function isTwo(input){
 console.log(isTwo(random));
 console.log("The random number was " + random);
 
+
+
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -99,6 +101,9 @@ console.log("The tip is $" + result)
  * then display the dollar amount they should tip
  */
 
+alert("Your tip is $" + result.toFixed(2))
+
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -113,3 +118,15 @@ console.log("The tip is $" + result)
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+var originalPrice = prompt("What is the price of your purchase?")
+var discountPercent = prompt("Apply the discount. (between 0 and 1. ex: 20% = 0.20 ")
+
+function applyDiscount(originalPrice, discountPercent) {
+    return originalPrice - (originalPrice * discountPercent);
+}
+
+var result = applyDiscount(originalPrice, discountPercent);
+
+console.log("Your discounted price is $" + result.toFixed(2))
+alert("Your discounted price is $" + result.toFixed(2))
