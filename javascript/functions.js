@@ -94,6 +94,10 @@ function calculateTip(bill, tiprate){
 var result = calculateTip(bill, tipRate);
 console.log("The tip is $" + result)
 
+console.log("should return " + calculateTip(45, 0.50));
+console.log("should return " + calculateTip(105, 0.50));
+console.log("should return " + calculateTip(1145, 0.50));
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
