@@ -44,7 +44,7 @@ for(var i = 0; i < names.length; i++) {
      * Refactor your above code to use a `forEach` loop
      */
 
-    names.forEach(function(name) {
+    names.forEach(function(name) {//the array is plural; the function is the argument; the function parameter is singular
         console.log(name);
     })
 
@@ -72,6 +72,23 @@ for(var i = 0; i < names.length; i++) {
     var last = function(input) {
         console.log(input[3]);
     }
+
+    // function first(input){
+    //     if(Array.isArray(input)) {
+    //         return input[0];
+    //     }
+    // }
+    // function second(input){
+    //     if(Array.isArray(input)) {
+    //         return input[1];
+    //     }
+    // }
+    // function last(input){
+    //     if(Array.isArray(input)) {
+    //         return input[input.length - 1];
+    //     }
+    // }
+
 
 
     first(names);
