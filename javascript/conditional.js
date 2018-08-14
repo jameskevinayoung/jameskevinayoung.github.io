@@ -80,23 +80,25 @@ var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 function analyzeColor(input){
-    return input;
+    var userColor = input;
+    return userColor;
 
 }
+var result = analyzeColor(randomColor);
+analyzeColor("cyan");
 
-analyzeColor("cyan")
 
-
-if (randomColor == colors) {
-    alert("Your color is: " + randomColor)
-}else if (randomColor === "blue") {
-    alert(randomColor + " is the color of the sky")
-}else if (randomColor === "red") {
-    alert("Strawberries are " + randomColor)
+if (result == colors) {
+    alert("Your color is: " + result);
+}else if (result == " blue") {
+    alert( result + " is the color of the sky")
+}else if (result == "red") {
+    alert("Strawberries are " + result);
+}else if (result !== "red" || result !== "orange" || result !== "yellow" || result !== 'green' || result !== 'blue' || result !== 'indigo' || result !== 'violet') {
+    alert("I don't know anything about " + result)
 }else {
-    alert("I don't know anything about " + randomColor)
+    alert("We don't want " + result);
 }
-console.log("Your color is: " + randomColor)
 
 
 
