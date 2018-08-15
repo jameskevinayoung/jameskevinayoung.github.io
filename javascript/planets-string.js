@@ -1,0 +1,83 @@
+(function(){
+    "use strict";
+
+    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+    var planetsArray;
+
+    /**
+     * TODO:
+     * Convert planetsString to an array, and save it in a variable named
+     * planetsArray.
+     * console.log planetsArray to check your work
+     */
+    var planetsArray = planetsString.split('|');
+    console.log(planetsArray);
+
+    /**
+     * TODO:
+     * Create a string with <br> tags between each planet. console.log() your
+     * results. Why might this be useful?
+     **/
+
+    var planetsBreak = planetsArray.join("<br>");
+    console.log(planetsBreak);
+
+
+    /**
+     * BONUS:
+     * Create another string that would display your planets in an undordered
+     * list. You will need an opening AND closing <ul> tags around the entire
+     * string, and <li> tags around each planet.
+     */
+
+//     function listOfPlanets() {
+//         for (var i = 0; i < 2; i++) {
+//             if(i === 0) {
+//                 console.log("<ul>");
+//                 planetsArray.forEach(function(element){
+//                     console.log("<li>" + element + "</li>")
+//                 })
+//             }else {
+//                 console.log("</ul>");
+//                 break;
+//             }
+//         }
+//     }
+// listOfPlanets();
+
+
+//// START WITH YOUR  ARRAY OF PLANETS
+
+//// CREATE AN OPENING <UL> TAG
+//// ITERATE <LI> AND </LI> TAGS AROUND EACH ITEM IN THE ARRAY. TO DO THIS I NEED A FUNCTION TO PROCESS IT
+function listPlanets(){
+    console.log("<ul>");
+        planetsArray.forEach(function(element){
+            console.log("<li>" + element + "</li>");
+        })
+        console.log("</ul>");
+}
+listPlanets()
+
+//// CREATE A CLOSING </UL> TAG
+
+
+})();
+
+
+// var fizzBuzz = function (input) {
+//     for (var i = 1; i < 101; i++) {
+//         if (i % 15 == 0) {
+//             console.log("FizzBuzz");
+//         }
+//         else if (i % 3 == 0) {
+//             console.log("Fizz");
+//         }
+//         else if (i % 5 == 0) {
+//             console.log("Buzz");
+//         }
+//         else {
+//             console.log(i);
+//         }
+//     }
+// }
