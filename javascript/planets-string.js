@@ -22,6 +22,9 @@
     var planetsBreak = planetsArray.join("<br>");
     console.log(planetsBreak);
 
+    var delimeter = "</li><li>";
+    var planetList = "<ul><li>" + planetsArray.join(delimeter) + "</li></ul>"
+    document.body.innerHTML = planetList;
 
     /**
      * BONUS:

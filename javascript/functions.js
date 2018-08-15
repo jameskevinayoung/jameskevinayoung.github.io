@@ -214,13 +214,19 @@ console.log("The number is " + isMultipleOf(36, 5));
 /** Make a function named isTrue(boolean)*/
 
 function isTrue(boolean){
-    var booleanValue = boolean
+    var booleanValue = boolean;
     return booleanValue === "boolean";
 }
 
 alert(isTrue("on"));
 
 /** Make a function named isFalse(boolean)*/
+
+function isFalse(boolean){
+    var booleanFalse = boolean;
+    return booleanFalse !== "boolean";
+}
+
 /** Make a function named isTruthy(input) // remember that values other than true will behave like true*/
 /** Make a function named isFalsy(input) // remember that values other than false behave like false*/
 /** Make a function named isVowel(letter)*/
