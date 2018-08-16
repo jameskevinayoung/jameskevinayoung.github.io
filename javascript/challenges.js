@@ -120,3 +120,47 @@ function removeAll(array, value){//this is my named function with two parameters
 console.log("this is the array removing ant: " + removeAll(bugs, "ant"));
 console.log("this is the array removing mosquito: " + removeAll(bugs, "mosquito"));
 console.log("this is the array removing roach: " + removeAll(bugs, "roach"));
+
+
+
+
+/**
+ * MAKE an array of 20 random numbers between 1 and 6
+ *
+ *
+ *
+ *
+ */
+    //1: make a random variable using the Math.floor formula
+// var array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];//creates an array
+//
+// function randomizeArray(num) {//create a function that provides 20 random numbers 1-6
+//     var random = Math.floor((Math.random() * 6) + 1);//number randomizer
+//     array.fill(random, 0, 19); //fill the array with random numbers from index 0 -19
+//     array.forEach(num)// for each num in the array either its even or odd.
+//         if(num %2 === 0){
+//         console.log(num + " is even!")
+//         }else if(num %2 !== 0){
+//             console.log(num + " is odd!")
+//         }else {
+//             console.log(num)
+//         }
+// }
+//
+// console.log(array);
+
+// forEach(function(num){
+//     if(num %2 === 0){
+//         console.log(num + " is even!")
+//     }else if(num %2 !== 0){
+//         console.log(num + " is odd!")
+//     }else {
+//
+//     }
+// });
+
+
+
+
+
+

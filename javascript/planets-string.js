@@ -67,20 +67,19 @@ listPlanets()
 
 })();
 
-
-// var fizzBuzz = function (input) {
-//     for (var i = 1; i < 101; i++) {
-//         if (i % 15 == 0) {
+//FIZZBUZZ PRACTICE
+//     for (var i = 1; i <= 25; i++) {//create for loop
+//         if (i % 15 == 0) { //this is the lowest common multiple for 3 and 5
 //             console.log("FizzBuzz");
 //         }
-//         else if (i % 3 == 0) {
+//         else if (i % 3 == 0) {//second condition for fizz
 //             console.log("Fizz");
 //         }
-//         else if (i % 5 == 0) {
+//         else if (i % 5 == 0) {//third condition for buzz
 //             console.log("Buzz");
 //         }
-//         else {
+//         else {//log all other numbers
 //             console.log(i);
 //         }
 //     }
-// }
+
