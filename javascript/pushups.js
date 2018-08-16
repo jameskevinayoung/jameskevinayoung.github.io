@@ -26,7 +26,7 @@ function squaredParameters(a, b, c){
     var cSquared = c * c;
 
     if(aSquared + bSquared === cSquared){
-        console.log((aSquared + bSquared) + " = " + );
+        console.log(true);
     }else{
         console.log(false);
     }
