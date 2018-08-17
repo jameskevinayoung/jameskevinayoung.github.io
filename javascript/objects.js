@@ -217,19 +217,12 @@
      *      ---
      *      ...
      */
-var books ={};
 
-for(var i = 0; i < books.length; i++){
-    var author = books.author.firstName + " " + books.author.lastName;
-    var title = books.title;
-
-    if(books[i] < books.length){
-        console.log("Books #" + books);
-        console.log("Title: " + title[i]);
-        console.log("Author: " + author[i]);
-    }
-
-}
+books.forEach(function(book, index){
+    console.log("Book #" + (index+1));
+    console.log("Title: " + book.title);
+    console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+});
 
 
 
