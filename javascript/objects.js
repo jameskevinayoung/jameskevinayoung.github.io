@@ -12,11 +12,25 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    var person = {}; //create the object in a variable
-    person.firstName = "James"; //create firstName property
-    console.log(person.firstName);
-    person.lastName = "Young"; //create lastName property
-    console.log(person.lastName);
+        //Object Literal Notation
+    /**
+     * var person = {
+        firstName: " James",
+        lastName: "Young"
+        };
+     console.log(person.firstName);
+     console.log(person.lastName);
+    */
+
+
+     var person = {}; //create the object in a variable
+     person.firstName = "James"; //create firstName property
+     console.log(person.firstName);
+     person.lastName = "Young"; //create lastName property
+     console.log(person.lastName);
+
+
+
 
 
     /**
@@ -28,6 +42,17 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+
+    //Object Literal Notation example
+   /** var person = {
+        firstName: " James",
+        lastName: "Young"
+        sayHello: function(){
+            console.log("Hello from " + this.firstName + " " + this.lastName + "!")
+        }
+
+        };
+}*/
 
     person.sayHello = function () {//create a sayHello function to person object
         return "Hello from " + this.firstName + " " + this.lastName + "!";//returns firstName and lastName
@@ -72,9 +97,9 @@
                 var discount = shopper.amount * .12;//a variable the discount formula
 
                 if (shopper.amount > 200) {//create conditional statements that compare the amount to the minimum of the  discount offer
-                    console.log(shopper.name + " spent " + shopper.amount.toFixed(2) + ". Got a discount of $" + discount.toFixed(2) + " for a total of " + (shopper.amount - discount).toFixed(2));
+                    console.log(shopper.name + " spent $" + shopper.amount.toFixed(2) + ". Got a discount of $" + discount.toFixed(2) + " for a total of $" + (shopper.amount - discount).toFixed(2));
                 } else {
-                    console.log(shopper.name + " spent " + shopper.amount.toFixed(2) + ", but didn't get a discount");
+                    console.log(shopper.name + " spent $" + shopper.amount.toFixed(2) + ", but didn't get a discount");
                 }
             }
         );
@@ -83,6 +108,25 @@
     };
 
     shoppers.discountOffer();//invoke the method.
+
+    /** forEach example array.forEach(function(element, index, array){});
+     * shoppers.forEach(function(shopper){
+     *     console.log(shopper); //just to see all of the shoppers
+     *     var total;
+     *     var discount;
+     *     if(shopper.amount > 200){
+     *         discount = shopper.amount * .12;
+     *         total = shopper.amount - discount;
+     *     }else {
+     *         total = shopper.amount;
+     *     }
+     *     console.log(shopper.name + " spent $" + shopper.amount.toFixed(2) + ". Got a discount of $" + discount.toFixed(2) + " for a total of $" + total.toFixed(2));)
+     *
+     * });
+     */
+
+
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -186,7 +230,6 @@ for(var i = 0; i < books.length; i++){
     }
 
 }
-console.log()
 
 
 
