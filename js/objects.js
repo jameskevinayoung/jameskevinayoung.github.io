@@ -237,4 +237,16 @@ books.forEach(function(book, index){//forEach loop on object books; have the fun
      *   `showBookInfo` function.
      */
 
+    function createBook(books, title, author) {
+        var result = '';
+        for (var i in books) {
+            // obj.hasOwnProperty() is used to filter out properties from the object's prototype chain
+            if (books.hasOwnProperty(i)) {
+                result += title + '.' + i + ' = ' + books[i] + '\n';
+
+            }
+        }
+        return result;
+    }
+
 })();
