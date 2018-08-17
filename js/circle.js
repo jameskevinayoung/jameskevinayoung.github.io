@@ -9,7 +9,7 @@
         getArea: function () {//this is a method property for circle. " circle.getArea"
             // TODO: complete this method
             // hint: area = pi * radius^2
-            let area = Math.PI * (circle.radius * circle.radius);
+            let area = Math.PI * (this.radius * this.radius);
             //this is a local variable within the getArea method of circle.
 
             return area; // TODO: return the proper value
@@ -22,7 +22,7 @@
 
             // If doRounding is true, round the result to the nearest integer.
 
-            if(doRounding === true){
+            if(doRounding){
                 console.log(Math.round(result));
             }else {
                 console.log(this.getArea());//
