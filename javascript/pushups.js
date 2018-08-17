@@ -40,19 +40,19 @@ console.log(findLongestWord("To be or not to be that is the question"));
 function countReps(word){
     var mostReps = 0;//initialize variable to hold the number of repeated letters in a word
 
-    for(var i= 0; i < word.length; i++) {// i iterates the word first
-        var reps = 1;
+    for(var i= 0; i < word.length; i++) {// i iterates the word first time
+        var reps = 1;//initialize variable reps with a value to begin with
 
-        for(var j= 0; j < word.length; j++){
-            if(i !== j && word[i].toLowerCase() === word[j].toLowerCase()) {
-                reps++;
+        for(var j= 0; j < word.length; j++){//j iterates the word second time
+            if(i !== j && word[i].toLowerCase() === word[j].toLowerCase()) { //compares i and j letters && word[i] and word[j]
+                reps++;//increments number of reps
             }
         }
-        if(reps > mostReps){
-            mostReps = reps;
-        }
+        if(reps > mostReps){//compares the previous "if" output reps and compares to mostReps variable;
+            mostReps = reps;//if the reps is greater than the previous mostReps, then reps becomes the mostReps
+        } //if 2 is > 1, then 2 becomes the new number of most reps
     }
-    return mostReps;
+    return mostReps;//give the final mostReps number per argument.
 }
 
 
