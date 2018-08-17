@@ -218,8 +218,8 @@
      *      ...
      */
 
-books.forEach(function(book, index){
-    console.log("Book #" + (index+1));
+books.forEach(function(book, index){//forEach loop on object books; have the function contain the book and index parameters
+    console.log("Book #" + (index+1));//
     console.log("Title: " + book.title);
     console.log("Author: " + book.author.firstName + " " + book.author.lastName);
 });

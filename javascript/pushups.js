@@ -20,15 +20,43 @@ console.log(findLongestWord("To be or not to be that is the question"));
 //returns the longest word
 
 
-function squaredParameters(a, b, c){
-    var aSquared = a * a;
-    var bSquared = b * b;
-    var cSquared = c * c;
+// function squaredParameters(a, b, c){
+//     var aSquared = a * a;
+//     var bSquared = b * b;
+//     var cSquared = c * c;
+//
+//     if(aSquared + bSquared === cSquared){
+//         console.log(true);
+//     }else{
+//         console.log(false);
+//     }
+//     return
+// }
 
-    if(aSquared + bSquared === cSquared){
-        console.log(true);
-    }else{
-        console.log(false);
+
+
+// WRITE A FUNCTION THAT TAKES A STRING AND RETURNS THE FIRST WORD WITH THE GREATEST NUMBER OF REPEATED LETTERS.
+
+function countReps(word){
+    var mostReps = 0;//initialize variable to hold the number of repeated letters in a word
+
+    for(var i= 0; i < word.length; i++) {// i iterates the word first
+        var reps = 1;
+
+        for(var j= 0; j < word.length; j++){
+            if(i !== j && word[i].toLowerCase() === word[j].toLowerCase()) {
+                reps++;
+            }
+        }
+        if(reps > mostReps){
+            mostReps = reps;
+        }
     }
-    return
+    return mostReps;
 }
+
+
+console.log(countReps("greenery"));
+console.log(countReps("tennessee"));
+console.log(countReps("aluminium"));
+console.log(countReps("Mississippi"));
