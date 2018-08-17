@@ -2,27 +2,30 @@
     "use strict";
 
     // create a circle object
-    var circle = {
-        radius: 3,
+    // JKY: STUMPED? THAT'S OK. REMEMBER "DON'T OVER THINK THE PROCESS" DO WHAT THE INSTRUCTIONS ARE ASKING
+    var circle = {//this is the circle object
+        radius: 3,//this is the radius property of the circle. "circle.radius"
 
-        getArea: function () {
+        getArea: function () {//this is a method property for circle. " circle.getArea"
             // TODO: complete this method
             // hint: area = pi * radius^2
             let area = Math.PI * (circle.radius * circle.radius);
+            //this is a local variable within the getArea method of circle.
 
             return area; // TODO: return the proper value
-        },
+        },// this returns the value of the variable that can be used when this method is later is assigned.
 
         logInfo: function (doRounding) {
             // TODO: complete this method.
-            var result = this.getArea();
+            let result = this.getArea();//this variable is assigned the value of the getArea method.
+            //You use the "this.getArea" because the method is being referenced in this circle object.
 
             // If doRounding is true, round the result to the nearest integer.
 
             if(doRounding === true){
                 console.log(Math.round(result));
             }else {
-                console.log(this.getArea());
+                console.log(this.getArea());//
             }
 
 
