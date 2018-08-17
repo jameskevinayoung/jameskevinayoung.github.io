@@ -219,12 +219,20 @@
      */
 
 books.forEach(function(book, index){//forEach loop on object books; have the function contain the book and index parameters
-    console.log("Book #" + (index+1));//
-    console.log("Title: " + book.title);
-    console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+    console.log("Book #" + (index+1));//index the location of the element then add 1; this is less applicable in every case.
+    console.log("Title: " + book.title);//the title property of the book element
+    console.log("Author: " + book.author.firstName + " " + book.author.lastName);//the author's first name and last name.
 });
 
-
+/** var bookListing = function(book,bookNum){//create a variable that holds a function; giving the parameters (book, bookNum)
+ *   console.log("Book # " + bookNum);//without the plus 1 the variable is applicable in a wider variety of scenarios
+ *   console.log("Title: " + book.title);
+ *    console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+ *};
+ * bookListing(books[3], 5);
+ *
+ * books.forEach(function(book,id){bookListing(book, id+1);}
+ */
 
     /**
      * Bonus:
