@@ -20,22 +20,22 @@ console.log(findLongestWord("To be or not to be that is the question"));
 //returns the longest word
 
 
-function squareParameters(a, b, c){
-    var aSquared = a * a;
-    var bSquared = b * b;
-    var cSquared = c * c;
-
-    if(aSquared + bSquared === cSquared){
-        console.log(aSquared + " + " + bSquared + " = " + cSquared);
-    }else{
-        console.log(false);
-    }
-
-}
-
-squareParameters(3, 4, 5);
-squareParameters(5, 7, 3);
-squareParameters(0, 9, 8);
+// function squareParameters(a, b, c){
+//     var aSquared = a * a;
+//     var bSquared = b * b;
+//     var cSquared = c * c;
+//
+//     if(aSquared + bSquared === cSquared){
+//         console.log(aSquared + " + " + bSquared + " = " + cSquared);
+//     }else{
+//         console.log(false);
+//     }
+//
+// }
+//
+// squareParameters(3, 4, 5);
+// squareParameters(5, 7, 3);
+// squareParameters(0, 9, 8);
 
 
 // WRITE A FUNCTION THAT TAKES A STRING AND RETURNS THE FIRST WORD WITH THE GREATEST NUMBER OF REPEATED LETTERS.
@@ -63,3 +63,25 @@ squareParameters(0, 9, 8);
 // console.log(countReps("tennessee"));
 // console.log(countReps("aluminium"));
 // console.log(countReps("Mississippi"));
+
+
+
+//multiply function that takes 2 parameters num1 and num2 where you multiply the two parameters without the "*" key. make a loop:
+
+function multiplication(x, y){
+    let product = 0;
+    for(let i = 0; i < y - 1; i++){
+        product += x;
+    }
+    return product
+}
+console.log(multiplication(3, 4));
+
+function exponentiate(x, y){
+    let product = 1;
+    for(let i = 0; i < y - 1; i++){
+        product *= x;
+    }
+    return product
+}
+console.log(exponentiate(3, 4));
