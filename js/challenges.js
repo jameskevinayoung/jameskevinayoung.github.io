@@ -163,7 +163,14 @@ function randomizeArray() {//create a function that provides 20 random numbers 1
 //     }
 // });
 
+Challenges:
 
+    Create a file named dom-challenge.html
+
+0. The html should have a h1 that says "Hello World".
+
+1. Add code that loops through an array of background images every 2 seconds. For example, make a list of background images to be a turtle,
+    a lion, a tiger, a bear, a field of grain, a beach, a river, and a lake.
 
 
 
