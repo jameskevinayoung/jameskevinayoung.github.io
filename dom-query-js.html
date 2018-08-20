@@ -40,11 +40,16 @@
         var subHeader = document.getElementById("sub-header");
         console.log(subHeader.innerHTML);
         // TODO: Set the text color of subHeader to blue
-        
+        subHeader.style.color = '#4559ff';
         // TODO: Uncomment the next line and get all list items
-        // var listItems = ;
-
+        var listItems = document.getElementsByTagName("li");
+        for(var i = 0; i < listItems.length; i++){
+            console.log(listItems[i]);
+        };
         // TODO: Set text color on every other list item to grey
+
+        var dbId = listItems["2", "4"].getAttribute("data-dbid");
+        dbId=
         // TODO: Set text color of li with dbid = 1 to blue
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
