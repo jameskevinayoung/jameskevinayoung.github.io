@@ -48,21 +48,21 @@
         }
         // TODO: Set text color on every other list item to grey
         for (var i = 0; i < listItems.length; i++) {
-            if(i %2 !== 0){
-                listItems[i].style['background-color'] = "grey";
+            if(i %2 !== 0){//the iteration needs to even or odd not "listItems" because "listItems" is not the variable being cycled through,  "i" is ;
+                listItems[i].style['background-color'] = "grey";//this is where set the color to the list items based on the iterations
             }
         }
 
 
         // TODO: Set text color of li with dbid = 1 to blue
-        listItems[0].style.color = "blue";
+        listItems[0].style.color = "blue";//the index is needed to identify which item is to be changed.
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
         console.log(subParagraphs);
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = "Mission Accomplished!";
+        subParagraphs[0].innerHTML = "Mission Accomplished!";//the index is needed to identify which item is to be changed.
 
     })();
 </script>
