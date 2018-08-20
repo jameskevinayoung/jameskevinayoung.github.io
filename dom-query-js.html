@@ -43,22 +43,20 @@
         subHeader.style.color = '#4559ff';
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName("li");
-        for(var i = 0; i < listItems.length; i++){
-            console.log(listItems[i]);
-        }
+            console.log(listItems);
         // TODO: Set text color on every other list item to grey
         for (var i = 0; i < listItems.length; i++) {
             if(i %2 !== 0){//the iteration needs to even or odd not "listItems" because "listItems" is not the variable being cycled through,  "i" is ;
-                listItems[i].style['background-color'] = "grey";//this is where set the color to the list items based on the iterations
+                listItems[i].style.color = "grey";//this is where set the color to the list items based on the iterations
             }
         }
 
-
         // TODO: Set text color of li with dbid = 1 to blue
-        listItems[0].style.color = "blue";//the index is needed to identify which item is to be changed.
+        //using the "attribute selector"(CSS)
+        document.querySelector("li[data-dbid= '1']").style.color="blue";
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        var subParagraphs = document.getElementsByClassName("sub-paragraph");
+        var subParagraphs = document.getElementsByClassName("sub-paragraph")[0];//if you use array index you don't need it to change text
         console.log(subParagraphs);
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"

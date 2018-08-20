@@ -1,5 +1,5 @@
 /** make a function called randomIntBetween(min,max) that returns a random number between
-  *the min and max.*/
+  *the min and max. "aka between 2 values" */
 //What are my math functions that I will be using?
 // Math.floor();
 // Math.random();
@@ -9,9 +9,9 @@
 var randomNumber = Math.floor((Math.random() * 10) + 1);//gives me a random number between 1 and 10;
 
 function randomIntBetween(min, max) {
-    var
+    return randomNumber * (max - min) + min;
 }
-}
+
 
 
 
