@@ -6,6 +6,12 @@
     <title>DOM: Query and Modify</title>
 </head>
 <body>
+<button id="button1">Change Main Header</button>
+<button id="button2">Change Sub Header</button>
+<button id="button3">Change List Items</button>
+<button id="button4">Change Sub Paragraph</button>
+
+
 
 <h1 id="main-header">Hello World!</h1>
 <ul>
@@ -29,38 +35,103 @@
 <script>
     (function() {
         "use strict";
+    //JS HANDLERS
+// ---------------------------------------------------------------------------------------------------------------------
+
+        var handler1 = function(){
+            var mainHeader = document.getElementById("main-header");
+            mainHeader.innerHTML = "JavaScript is Cool";
+            alert("You changed the main header to " + mainHeader.innerHTML);
+        };
+        var button1 = document.getElementById("button1");
+        button1.addEventListener('click', handler1);
+
+
+
+        var handler2 = function(){
+            var subHeader = document.getElementById("sub-header");
+            subHeader.style.color = '#4559ff';
+            alert("You changed the sub-header text to " + subHeader.style.color);
+
+        };
+        var button2 = document.getElementById("button2");
+        button2.addEventListener('click', handler2);
+
+
+
+        var handler3 = function(){
+            var listItems = document.getElementsByTagName("li");
+            var firstListItem = document.querySelector("li[data-dbid='1']").style.color="blue";
+            alert("You changed every other list item text to grey and the first list item to " + firstListItem);
+            for(var i = 0; i < listItems.length; i++){
+                if(i %2 !== 0){
+                    listItems[i].style.color= "grey";
+                }
+            }
+        };
+        var button3 = document.getElementById("button3");
+        button3.addEventListener('click', handler3);
+
+
+
+        var handler4 = function(){
+            var subParagraphs = document.getElementsByClassName("sub-paragraph");
+            subParagraphs[0].innerHTML = "Mission Accomplished!!!";
+            alert("You changed the sub-paragraph to " + subParagraphs[0].innerHTML);
+        };
+        var button4 = document.getElementById("button4");
+        button4.addEventListener('click', handler4);
+
+
+    //JS HANDLERS
+// ---------------------------------------------------------------------------------------------------------------------
+
         // TODO: Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById("main-header");
         console.log(mainHeader.innerHTML);
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool";
-        console.log(mainHeader.innerHTML);
+        // mainHeader.innerHTML = "JavaScript is Cool";
+        // console.log(mainHeader.innerHTML);
+
+
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById("sub-header");
         console.log(subHeader.innerHTML);
+
+
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = '#4559ff';
+        // subHeader.style.color = '#4559ff';
+
+
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName("li");
             console.log(listItems);
+
+
         // TODO: Set text color on every other list item to grey
-        for (var i = 0; i < listItems.length; i++) {
-            if(i %2 !== 0){//the iteration needs to even or odd not "listItems" because "listItems" is not the variable being cycled through,  "i" is ;
-                listItems[i].style.color = "grey";//this is where set the color to the list items based on the iterations
-            }
-        }
+        // for (var i = 0; i < listItems.length; i++) {
+        //     if(i %2 !== 0){//the iteration needs to even or odd not "listItems" because "listItems" is not the variable being cycled through,  "i" is ;
+        //         listItems[i].style.color = "grey";//this is where set the color to the list items based on the iterations
+        //     }
+        // }
 
         // TODO: Set text color of li with dbid = 1 to blue
+
+
         //using the "attribute selector"(CSS)
-        document.querySelector("li[data-dbid= '1']").style.color="blue";
+        // document.querySelector("li[data-dbid= '1']").style.color="blue";
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        var subParagraphs = document.getElementsByClassName("sub-paragraph")[0];//if you use array index you don't need it to change text
-        console.log(subParagraphs);
+
+
+        // var subParagraphs = document.getElementsByClassName("sub-paragraph")[0];//if you use array index you don't need it to change text
+        // console.log(subParagraphs);
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = "Mission Accomplished!";//the index is needed to identify which item is to be changed.
+
+
+        // subParagraphs[0].innerHTML = "Mission Accomplished!";//the index is needed to identify which item is to be changed.
 
     })();
 </script>
