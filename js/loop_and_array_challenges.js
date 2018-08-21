@@ -25,7 +25,7 @@ console.log(randomIntBetween(1,10));
  make a function that () returns a random interger between 1 and 4.*/
 
 function randomiZeroOne(){//a function that randomizes a 0 or 1
-    return Math.round(Math.random());//return the random number between 0 and 1; round that number up or down
+    return Math.round(Math.random());//return the random number between 0 and 1; round that number up or down **Stack Over Flow**
 }
 
 console.log(randomiZeroOne());

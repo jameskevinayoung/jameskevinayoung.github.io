@@ -68,20 +68,58 @@ console.log(findLongestWord("To be or not to be that is the question"));
 
 //multiply function that takes 2 parameters num1 and num2 where you multiply the two parameters without the "*" key. make a loop:
 
-function multiplication(x, y){
-    let product = 0;
-    for(let i = 0; i < y - 1; i++){
-        product += x;
-    }
-    return product
-}
-console.log(multiplication(3, 4));
+// function multiplication(x, y){
+//     let product = 0;
+//     for(let i = 0; i < y - 1; i++){
+//         product += x;
+//     }
+//     return product
+// }
+// console.log(multiplication(3, 4));
+//
+// function exponentiate(x, y){
+//     let product = 1;
+//     for(let i = 0; i < y - 1; i++){
+//         product *= x;
+//     }
+//     return product
+// }
+// console.log(exponentiate(3, 4));
 
-function exponentiate(x, y){
-    let product = 1;
-    for(let i = 0; i < y - 1; i++){
-        product *= x;
+
+function factorial(x){
+
+    if(x === 0 || x === 1 ){//prevents having a negative number or zero number
+        return 1;
     }
-    return product
+    for (var i = x - 1; i > 0; i--){//variable starts at the number - 1 and decrements
+        x *= i;//making the x = to the number times the i
+    }
+    return x;
 }
-console.log(exponentiate(3, 4));
+
+console.log(factorial(10)); //3,628,800;; my function originally returned an extra 0 without the minus 1
+
+function summation(x){
+    for(var i= x-1; i > 0; i--){
+        console.log(x + " + " + i);
+        x += i;
+    }
+    return x;
+}
+
+// var summation = function(num) {//teacher's example
+//     var sum = 0;//initializes the variable
+//     for (var i = num; i > 0; i--){//don't need minus 1 in the i variable
+//         sum += i;
+//
+//     }
+//     return sum;
+// };
+
+
+console.log(summation(5));
+console.log(summation(7));
+console.log(summation(9));
+
+
