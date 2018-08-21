@@ -43,8 +43,24 @@
             mainHeader.innerHTML = "JavaScript is Cool";
             alert("You changed the main header to " + mainHeader.innerHTML);
         };
-        var button1 = document.getElementById("button1");
+        var button1 = document.getElementById("button1");//connects my
         button1.addEventListener('click', handler1);
+
+        /**TEACHER'S Anonymous function EXAMPLE--restricted scope to reduce the number of items in Global Scope--
+         * var button1 = document.getElementById("button1");
+         * button.addEventListener('click', function(){
+         *  var mainHeader = document.getElementById("main-header");
+         *  mainHeader.innerHTML = "JavaScript is Cool";
+         *  alert("You changed the main header to " + mainHeader.innerHTML);
+         * });
+         *
+         *
+         * This is preferred because it is only functioning on this specific code verses multiply places
+         */
+
+
+
+
 
 
 
@@ -54,8 +70,21 @@
             alert("You changed the sub-header text to " + subHeader.style.color);
 
         };
+
         var button2 = document.getElementById("button2");
         button2.addEventListener('click', handler2);
+
+
+
+        /**
+         * var button2 = document.getElementById("button2");
+         * button2.addEventListener('click', function(){
+         *  var subHeader = document.getElementById("sub-header");
+         *  subHeader.style.color = "#4559ff";
+         *  alert("You changed the sub-header text to " + subHeader.style.color);
+         * });
+         *
+         */
 
 
 
@@ -74,13 +103,48 @@
 
 
 
+        /**
+         * var button3 = document.getElementById("button3");
+         * button3.addEventListener('click', function(){
+         *  document.querySelector("li[data-dbid='1']").style.color="blue";
+         *  alert("You changed the sub-header text to " + subHeader.style.color);
+         * });
+         *
+         * var listItemsArray = Array.from(document.getElementsByTagName("li"));
+         * listItemsArray.forEach(function(li,i){
+         *     li.addEventListener("mouseover"), function(){
+         *         console.log(li,i)
+         *         if(i %2 === 0){
+         *             li.style.color = "grey";
+         *             li.style.background = "pink";
+         *         }else {
+         *             li.style.color = "pink";
+         *             li.style.background = "grey";
+         *         }
+         *     }
+         * })
+         */
+
+
         var handler4 = function(){
-            var subParagraphs = document.getElementsByClassName("sub-paragraph");
-            subParagraphs[0].innerHTML = "Mission Accomplished!!!";
-            alert("You changed the sub-paragraph to " + subParagraphs[0].innerHTML);
+            var subParagraphs = document.getElementsByClassName("sub-paragraph")[0];
+            subParagraphs.innerHTML = "Mission Accomplished!!!";
+            alert("You changed the sub-paragraph to " + subParagraphs.innerHTML);
         };
         var button4 = document.getElementById("button4");
         button4.addEventListener('click', handler4);
+
+        /**
+         * var button4 = document.getElementById("button4");
+         * button4.addEventListener('click', function(){
+         *     var subParagraphs = document.getElementsByClassName("sub-paragraph")[0];
+         *     subParagraphs.innerHTML = "Mission Accomplished!!!";
+         * })
+         *
+         *
+         *
+         */
+
 
 
     //JS HANDLERS
