@@ -6,13 +6,15 @@
 // Math.min();
 // Math.max();
 
-var randomNumber = Math.floor((Math.random() * 10) + 1);//gives me a random number between 1 and 10;
 
-function randomIntBetween(min, max) {
-    return randomNumber * (max - min) + min;
+function randomIntBetween(min, max) {//create the named function with parameters min, and max
+    min = Math.ceil(min);//function returns the smallest integer greater than or equal to a given number.
+    max = Math.floor(max);//function returns the largest integer less than or equal to a given number.
+    return Math.floor((Math.random() * (max - min)) + min);//return the randomNumber variable between the specified values.
+    // The returned value is no lower than (and may possibly equal) min, and is less than (and not equal) max **MDN Web Docs**
 }
 
-
+console.log(randomIntBetween(1,10));
 
 
 /** make a function that () returns either 0 or 1, randomly.
@@ -20,7 +22,11 @@ function randomIntBetween(min, max) {
  make a function that () returns
  make a function that () returns a random interger between 1 and 20.
  make a function that () returns a random interger between 1 and 12.
- make a function that () returns a random interger between 1 and 4.
+ make a function that () returns a random interger between 1 and 4.*/
 
+function randomiZeroOne(){//a function that randomizes a 0 or 1
+    return Math.round(Math.random());//return the random number between 0 and 1; round that number up or down
+}
 
+console.log(randomiZeroOne());
 
