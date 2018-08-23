@@ -147,61 +147,148 @@ console.log(findLongestWord("To be or not to be that is the question"));
 
 // pushup 8/23/18
 
-var superHero = {
-    codeName: ,
-    secretIdentity:{
-        name:"James Young",
-        occupation: "software developer",
-    },
-    superPower:function(){
-        console.log("THis is my power set")
-    }
-    hairColor:,
-    eyeColor:,
-};
+// var superHero = {
+//     codeName: ,
+//     secretIdentity:{
+//         name:"James Young",
+//         occupation: "software developer",
+//     },
+//     superPower:function(){
+//         console.log("THis is my power set")
+//     }
+//     hairColor:,
+//     eyeColor:,
+// };
+//
+// var superHero1 = {
+//     codeName: ,
+//     secretIdentity:{
+//         name:,
+//         occupation:,
+//     },
+//     superPower:{
+//         power1:,
+//         power2:,
+//     },
+//     hairColor:,
+//     eyeColor:,
+// };
+// var superHero2 = {
+//     codeName: ,
+//     secretIdentity:{
+//         name:,
+//         occupation:,
+//     },
+//     superPower:{
+//         power1:,
+//         power2:,
+//     },
+//     hairColor:,
+//     eyeColor:,
+// };
+// var superHero3 = {
+//     codeName: ,
+//     secretIdentity:{
+//         name:,
+//         occupation:,
+//     },
+//     superPower:{
+//         power1:,
+//         power2:,
+//     },
+//     hairColor:,
+//     eyeColor:,
+// };
+//
+// var superAvengers = []
+// superAvengers.push(superHero);
+// superAvengers.push(superHero1);
+// superAvengers.push(superHero2);
+// superAvengers.push(superHero3);
 
-var superHero1 = {
-    codeName: ,
-    secretIdentity:{
-        name:,
-        occupation:,
-    },
-    superPower:{
-        power1:,
-        power2:,
-    },
-    hairColor:,
-    eyeColor:,
-};
-var superHero2 = {
-    codeName: ,
-    secretIdentity:{
-        name:,
-        occupation:,
-    },
-    superPower:{
-        power1:,
-        power2:,
-    },
-    hairColor:,
-    eyeColor:,
-};
-var superHero3 = {
-    codeName: ,
-    secretIdentity:{
-        name:,
-        occupation:,
-    },
-    superPower:{
-        power1:,
-        power2:,
-    },
-    hairColor:,
-    eyeColor:,
-};
+//ARRAY PRACTICE
+(function(){
+    "use strict";
 
-var superAvengers = []
-superAvengers.push(superHero);
-superAvengers.push(superHero1);
-superAvengers.push(superHero2);
-superAvengers.push(superHero3);
+    /**
+     * TODO:
+     * Create an array to hold the first names of your classmates in a variable called 'names' and console log the result.
+     * Next only add your name and push other names to the list.
+     *
+     */
+
+    var names = ["James"];
+    console.log(names);
+
+    /**
+     * WHAT WAS YOUR RESULT? WAS IT AN ARRAY WITH JUST YOUR NAME IN IT? WHAT WAS THE ARRAY INDEX OF YOUR NAME?
+     * WHAT WAS THE NUMBER NAMES IN THE ARRAY?
+     */
+
+
+
+    names.push("Mike");
+    names.push('Ryan');
+    names.push('Tamisha');
+    names.push('Jolivet');
+    names.push('Hunter');
+    names.push('Justin');
+    console.log(names);
+
+    /**
+     * WHAT IS YOUR RESULT? WAS IT AN ARRAY WITH MULTIPLE NAMES IN IT? WHAT WAS THE INDEX OF PERSON 3, 8?
+     * WHAT WAS THE NUMBER OF NAMES IN THE ARRAY, AND DOES IT MATCH THE NUMBER OF NAMES PUSHED MINUS YOUR NAME?
+     * IF NOT, WHY?
+     */
+
+
+    /**
+     * TODO:
+     * Create a log statement that will log the number of elements in the names
+     * array. and concatenate it with the string "The number of names in this array is: ".
+     */
+
+    console.log("The number of names in this array is: " + names.length);
+
+    /**
+     * WHAT WAS YOUR RESULT? DID IT MATCH THE TOTAL NUMBER OF NAMES IN THE ARRAY? IF NOT, WHY?
+     */
+
+
+    /**
+     * TODO:
+     * Create log statements that will print each of the names individually by
+     * accessing each element's index.
+     */
+
+    C
+
+
+
+    /**
+     * TODO:
+     * Write some code that uses a for loop to log every item in the names
+     * array.
+     */
+
+    /**
+     * TODO:
+     * Refactor your above code to use a `forEach` loop
+     */
+
+    /**
+     * TODO:
+     * Create the following three functions, each will accept an array and
+     * return an an element from it
+     * - first: returns the first item in the array
+     * - second: returns the second item in the array
+     * - last: returns the last item in the array
+     *
+     * Example:
+     *  > first([1, 2, 3, 4, 5]) // returns 1
+     *  > second([1, 2, 3, 4, 5]) // returns 2
+     *  > last([1, 2, 3, 4, 5]) // return 5
+     */
+
+})();
+
