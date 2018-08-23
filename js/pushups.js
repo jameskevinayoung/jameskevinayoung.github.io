@@ -87,39 +87,63 @@ console.log(findLongestWord("To be or not to be that is the question"));
 // console.log(exponentiate(3, 4));
 
 
-function factorial(x){
-
-    if(x === 0 || x === 1 ){//prevents having a negative number or zero number
-        return 1;
-    }
-    for (var i = x - 1; i > 0; i--){//variable starts at the number - 1 and decrements
-        x *= i;//making the x = to the number times the i
-    }
-    return x;
-}
-
-console.log(factorial(10)); //3,628,800;; my function originally returned an extra 0 without the minus 1
-
-function summation(x){
-    for(var i= x-1; i > 0; i--){
-        console.log(x + " + " + i);
-        x += i;
-    }
-    return x;
-}
-
-// var summation = function(num) {//teacher's example
-//     var sum = 0;//initializes the variable
-//     for (var i = num; i > 0; i--){//don't need minus 1 in the i variable
-//         sum += i;
+// function factorial(x){
 //
+//     if(x === 0 || x === 1 ){//prevents having a negative number or zero number
+//         return 1;
 //     }
-//     return sum;
-// };
+//     for (var i = x - 1; i > 0; i--){//variable starts at the number - 1 and decrements
+//         x *= i;//making the x = to the number times the i
+//     }
+//     return x;
+// }
+//
+// console.log(factorial(10)); //3,628,800;; my function originally returned an extra 0 without the minus 1
+//
+// function summation(x){
+//     for(var i= x-1; i > 0; i--){
+//         console.log(x + " + " + i);
+//         x += i;
+//     }
+//     return x;
+// }
+//
+// // var summation = function(num) {//teacher's example
+// //     var sum = 0;//initializes the variable
+// //     for (var i = num; i > 0; i--){//don't need minus 1 in the i variable
+// //         sum += i;
+// //
+// //     }
+// //     return sum;
+// // };
+//
+//
+// console.log(summation(5));
+// console.log(summation(7));
+// console.log(summation(9));
 
 
-console.log(summation(5));
-console.log(summation(7));
-console.log(summation(9));
+
+
+// STUDY HALL 8/22/18
+/**
+ * WRITE A FUNCTION
+ * TAKES A STRING
+ * RETURNS STRING W/ "PY" IN FRONT
+ * IF ALREADY STARTS W/ "PY", RETURN ORIGINAL STRING
+ */
+//--------------------------------------------------------
+// function prependTo(word){
+//     word.toLowerCase();
+//     if(word.substring(0,2) === "py"){
+//         return word;
+//     }else {
+//         return "py" + word;
+//     }
+// }
+// console.log(prependTo("pyromania"));
+// console.log(prependTo("animal"));
+//--------------------------------------------------------
+
 
 
