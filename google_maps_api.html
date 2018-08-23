@@ -85,15 +85,19 @@
             // MAP MARKER
 
             //create a variable that holds our mapped location(lat/lng)
-            var pizzaRitas = {lat: 29.424801, lng:  -98.490100};
+            var Pizzaritas = {lat: 29.424801, lng:  -98.490100};
 
 
             //add the marker to the existing map.
             var marker = new google.maps.Marker({
-                    position: pizzaRitas, //represents the variable of the lat/lng
+                    position: Pizzaritas, //represents the variable of the lat/lng
                     map: map    //represents the variable where we rendered the map
                 })
 
+            marker.addListener('click', function() { //to add user event that clicks to open up the info
+                infoWindow.open(map,marker);
+
+            });
              // MAP MARKER
 
 
@@ -103,7 +107,7 @@
                 content: "Pizzarita's: The Tai wings here are the ISH, BISH!!!!!"   //add your content
             });
 
-            infoWindow.open(map,marker); //opens the information window using the map and marker
+            // infoWindow.open(map,marker); //opens the information window using the map and marker
 
             //INFORMATION WINDOW
 
