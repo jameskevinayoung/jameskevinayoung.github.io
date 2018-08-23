@@ -145,5 +145,63 @@ console.log(findLongestWord("To be or not to be that is the question"));
 // console.log(prependTo("animal"));
 //--------------------------------------------------------
 
+// pushup 8/23/18
 
+var superHero = {
+    codeName: ,
+    secretIdentity:{
+        name:"James Young",
+        occupation: "software developer",
+    },
+    superPower:function(){
+        console.log("THis is my power set")
+    }
+    hairColor:,
+    eyeColor:,
+};
 
+var superHero1 = {
+    codeName: ,
+    secretIdentity:{
+        name:,
+        occupation:,
+    },
+    superPower:{
+        power1:,
+        power2:,
+    },
+    hairColor:,
+    eyeColor:,
+};
+var superHero2 = {
+    codeName: ,
+    secretIdentity:{
+        name:,
+        occupation:,
+    },
+    superPower:{
+        power1:,
+        power2:,
+    },
+    hairColor:,
+    eyeColor:,
+};
+var superHero3 = {
+    codeName: ,
+    secretIdentity:{
+        name:,
+        occupation:,
+    },
+    superPower:{
+        power1:,
+        power2:,
+    },
+    hairColor:,
+    eyeColor:,
+};
+
+var superAvengers = []
+superAvengers.push(superHero);
+superAvengers.push(superHero1);
+superAvengers.push(superHero2);
+superAvengers.push(superHero3);
