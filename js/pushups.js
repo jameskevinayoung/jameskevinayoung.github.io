@@ -302,46 +302,46 @@
 //
 // })();
 
-var dogs = [
-    {
-        name:"Annie",
-        age: 3,
-        breed: "labradoodle",
-        sex: "female",
-    },
-    {
-        name: "Roxeanne",
-        age: 7,
-        breed: "Cocker Spaniel",
-        sex: "female",
-        legs: 3,
-    },
-    {
-        name:"Roscoe",
-        age: 5,
-        breed: "American Pit-Bull",
-        sex: "male",
-        nobleHound: true,
-    },
-    {
-        name:"Frisky",
-        age: 6,
-        breed: "German Shepard",
-        sex: "male"
-    },
-    {
-        name:"Pookiepoo",
-        age: 2,
-        breed: "Chihuahua",
-    },
-    {
-        name:"Snoopadoop",
-        age: 2,
-        breed: "Cockapoo",
-        nobleHound: true,
-    },
-
-]
+// var dogs = [
+//     {
+//         name:"Annie",
+//         age: 3,
+//         breed: "labradoodle",
+//         sex: "female",
+//     },
+//     {
+//         name: "Roxeanne",
+//         age: 7,
+//         breed: "Cocker Spaniel",
+//         sex: "female",
+//         legs: 3,
+//     },
+//     {
+//         name:"Roscoe",
+//         age: 5,
+//         breed: "American Pit-Bull",
+//         sex: "male",
+//         nobleHound: true,
+//     },
+//     {
+//         name:"Frisky",
+//         age: 6,
+//         breed: "German Shepard",
+//         sex: "male"
+//     },
+//     {
+//         name:"Pookiepoo",
+//         age: 2,
+//         breed: "Chihuahua",
+//     },
+//     {
+//         name:"Snoopadoop",
+//         age: 2,
+//         breed: "Cockapoo",
+//         nobleHound: true,
+//     },
+//
+// ]
 
 // write a function that receives an array of animals
 // loops over them, and writes out the ones that
@@ -349,13 +349,13 @@ var dogs = [
 // or all noble hounds
 
 
-function callHound(animals){
-
-    for(var i = 0; i < animals.length; i++){
-        if(animals[i].nobleHound){
-            console.log(animals[i].name + ", "+ animals[i].breed)
-        }
-    }
-}
-
-callHound(dogs);
+// function callHound(animals){
+//
+//     for(var i = 0; i < animals.length; i++){
+//         if(animals[i].nobleHound){
+//             console.log(animals[i].name + ", "+ animals[i].breed)
+//         }
+//     }
+// }
+//
+// callHound(dogs);
