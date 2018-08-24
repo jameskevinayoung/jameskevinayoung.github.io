@@ -1,20 +1,20 @@
 //PUSH UPS
 //create a function that takes a sentence
-function findLongestWord(sentence){//create a function that takes a sentence
-    var sentenceSplit =  sentence.split(" ");// Split the string into an array of strings
-    console.log(sentenceSplit)
-    var longestWord = 0;//Initiate a variable that will hold the length of the longest word
-
-    for(var i = 0; i < sentenceSplit.length; i++){//create a loop that iterates through the string
-        if (sentenceSplit[i].length > longestWord){//if the iteration is longer than longest word var
-            longestWord = sentenceSplit[i].length;//this is the new value of the longest word
-        }
-    }
-    return longestWord;//returns the longest word
-}
-console.log(findLongestWord("I like going out to parties with friends or watching TV."));
-
-console.log(findLongestWord("To be or not to be that is the question"));
+// function findLongestWord(sentence){//create a function that takes a sentence
+//     var sentenceSplit =  sentence.split(" ");// Split the string into an array of strings
+//     console.log(sentenceSplit)
+//     var longestWord = 0;//Initiate a variable that will hold the length of the longest word
+//
+//     for(var i = 0; i < sentenceSplit.length; i++){//create a loop that iterates through the string
+//         if (sentenceSplit[i].length > longestWord){//if the iteration is longer than longest word var
+//             longestWord = sentenceSplit[i].length;//this is the new value of the longest word
+//         }
+//     }
+//     return longestWord;//returns the longest word
+// }
+// console.log(findLongestWord("I like going out to parties with friends or watching TV."));
+//
+// console.log(findLongestWord("To be or not to be that is the question"));
 
 
 //returns the longest word
@@ -302,3 +302,60 @@ console.log(findLongestWord("To be or not to be that is the question"));
 //
 // })();
 
+var dogs = [
+    {
+        name:"Annie",
+        age: 3,
+        breed: "labradoodle",
+        sex: "female",
+    },
+    {
+        name: "Roxeanne",
+        age: 7,
+        breed: "Cocker Spaniel",
+        sex: "female",
+        legs: 3,
+    },
+    {
+        name:"Roscoe",
+        age: 5,
+        breed: "American Pit-Bull",
+        sex: "male",
+        nobleHound: true,
+    },
+    {
+        name:"Frisky",
+        age: 6,
+        breed: "German Shepard",
+        sex: "male"
+    },
+    {
+        name:"Pookiepoo",
+        age: 2,
+        breed: "Chihuahua",
+    },
+    {
+        name:"Snoopadoop",
+        age: 2,
+        breed: "Cockapoo",
+        nobleHound: true,
+    },
+
+]
+
+// write a function that receives an array of animals
+// loops over them, and writes out the ones that
+// satisfy a condition, like females, or a certain age or older,
+// or all noble hounds
+
+
+function callHound(animals){
+
+    for(var i = 0; i < animals.length; i++){
+        if(animals[i].nobleHound){
+            console.log(animals[i].name + ", "+ animals[i].breed)
+        }
+    }
+}
+
+callHound(dogs);
