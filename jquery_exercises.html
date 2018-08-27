@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>JQuery Exercises</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
+        li{
+            display: inline;
+            margin-right: 5px;
+            padding: 0;
+        }
+
+    </style>
 
 </head>
 
@@ -48,14 +61,14 @@
 
     $("li").css("font-size", "20px");
 
-    $("h1").click(function(){
-        alert("This is my h1");
-    });
+    // $("h1").click(function(){
+    //     alert("This is my h1");
+    // });
 
     $("h1,p,li").css("background-color", "yellow");
     $("*").css("background-color", "slategray");
 
-    alert($(".mainParagraph").text());
+    // alert($(".mainParagraph").text());
 
 
     function hoverIn(e){
@@ -64,9 +77,35 @@
 
     function hoverOut(e){
         $(e.target).css("border", "none")
-    };
+    }
 
-    $("li").hover(hoverIn, hoverOut)
+    $("li").hover(hoverIn, hoverOut);
+
+    $("#jqueryLesson").css("color", "#9b111e");
+    $("#subHeader1").css("color", "#0f52ba");
+
+
+    /**function clickOn(e){
+        $(e.target).css("color", "orange");
+    }
+
+    function dblClickOff(e){
+        $(e.target).css("color", "black")
+    }*/
+
+    function hoverOver(e){
+        $(e.target).css("color", "orange")
+    }
+
+    function hoverOut(e){
+        $(e.target).css("color", "black");
+    }
+
+    // $("p").click(clickOn);
+    // $("p").dblclick(dblClickOff);
+
+    $("p").hover(hoverOver,hoverOut);
+
 
 </script>
 
