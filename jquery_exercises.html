@@ -56,6 +56,18 @@
     $("*").css("background-color", "slategray");
 
     alert($(".mainParagraph").text());
+
+
+    function hoverIn(e){
+        $(e.target).css("border", "5px dashed yellow");
+    }
+
+    function hoverOut(e){
+        $(e.target).css("border", "none")
+    };
+
+    $("li").hover(hoverIn, hoverOut)
+
 </script>
 
 </body>
