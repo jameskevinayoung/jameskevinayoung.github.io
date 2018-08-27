@@ -24,7 +24,7 @@ $(function(){
         $("#panel1").fadeOut(2000).delay(6000).slideDown(3000);
         $("#panel2").delay(2000).fadeOut(2000).delay(3000).slideDown(3000);
         $("#panel3").delay(4000).fadeOut(2000).delay(2000).slideDown(3000);
-        $("#panel4").delay(6000).fadeOut(2000).delay(1000).slideDown(3000);
+        $("#panel4").delay(6000).fadeOut(2000).delay(2000).slideDown(3000);
 
     });
 
