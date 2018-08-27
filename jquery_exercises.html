@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Exercises</title>
+
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li class="nav-listitem" id="home"><a href="#">Home</a></li>
+            <li class="nav-listitem" id="about"><a href="#">About</a></li>
+            <li class="nav-listitem codeup" id="resume"><a href="#">Resume</a></li>
+        </ul>
+    </nav>
+
+    <main class="jqueryMain">
+        <h1 class="codeup" id="jqueryLesson">JQuery Lesson Begins</h1>
+            <p class="mainParagraph" id="paragraph1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium commodi delectus doloribus dolorum, enim esse excepturi fugiat id libero magni nostrum nulla officiis quidem quis repellendus repudiandae rerum tempora!</p>
+            <p class="mainParagraph" id="paragraph2">Aliquid animi dolorem doloribus eligendi explicabo, iusto molestias neque nobis nulla qui tempore vel voluptas. Beatae eligendi molestiae nobis reprehenderit sed soluta.</p>
+            <p class="mainParagraph" id="paragraph3">Ab beatae blanditiis consectetur deleniti explicabo facilis in, incidunt, ipsum libero qui quia, ratione repellat soluta sunt vero. Alias harum placeat tenetur.</p>
+
+        <h2 class="subHeader" id="subHeader1">Dolorum, officia.</h2>
+
+            <p class="subParagraph" id="subParagraph1">Cum eos fuga officiis sed vitae! Deserunt exercitationem expedita molestias natus nisi!</p>
+            <p class="subParagraph" id="subParagraph2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam beatae consequuntur dolor eaque eius ex expedita id, inventore iure laudantium minima numquam placeat qui quod temporibus tenetur vitae voluptatibus.</p>
+
+    </main>
+
+
+<script type="text/javascript" src="js/jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+
+
+    // $(document).ready(function () {
+    //     alert("The DOM has finished loading!!!");
+    // });
+
+    //if there are multiple ids that are the same jquery will only return the first instance
+    // $("#subParagraph1").html()
+
+    //multiple elements with the same class gets the same updates
+    // $(".codeup").css("border", "1px solid red");
+
+    $("li").css("font-size", "20px");
+
+    $("h1").click(function(){
+        alert("This is my h1");
+    });
+
+    $("h1,p,li").css("background-color", "yellow");
+    $("*").css("background-color", "slategray");
+
+    alert($(".mainParagraph").text());
+</script>
+
+</body>
+</html>
