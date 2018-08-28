@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #img{
+            display: none;
+            width: 400px;
+            height: 227px;
+            margin: 0;
+            padding: 0;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Konami Code</h1>
+<img src="img/denzel-my-man.gif" id="img">
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+
+
+    var allowedKeys = {  //need a key map of allowed keys
+        37: 'left',
+        38: 'up',
+        39: 'right',
+        40: 'down',
+        65: 'a',
+        66: 'b',
+        13: 'enter'
+    };
+    var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'enter']; //the konami code to compare
+    var konamiCodePosition = 0; //to match the konamiCode with the position sequence
+    $(document).keydown(function (event) {
+        var key = allowedKeys[event.keyCode];
+        var requiredKey = konamiCode[konamiCodePosition]; //the requiredKey is the combo of the konami code
+        if (key == requiredKey) {
+            konamiCodePosition++;
+            console.log(key);
+            if (konamiCodePosition == konamiCode.length) {
+                activateCode();
+                konamiCodePosition = 0;
+            }
+        } else {
+            konamiCodePosition = 0;
+        }
+    });
+
+    function activateCode() {
+        $("body").css("background-color", "black");
+        $("#img").fadeIn(3000);
+        var audio = new Audio('audio/my man.mp3');
+        audio.play();
+
+
+        alert("YOU HAVE REACHED BOSS MODE!!! HERE IS SOME CHEESECAKE!!!");
+    }
+
+
+
+
+
+
+    // var konamiCodex = [];
+    // $(document).keyup(function(event){
+    //    konamiCodex.push(event.keyCode);
+    //    console.log(konamiCodex.toString());
+    //
+    //    if(konamiCodex.toString().includes("38", "38", "40", "40", "37","39", "37","39", "66", "65","13"){
+    //        activateCode();
+    //    }
+    // });
+
+</script>
+</body>
+</html>
+
+
