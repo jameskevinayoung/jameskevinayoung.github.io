@@ -82,8 +82,21 @@
     <dd class="invisible">FY 2016 Enacted:$2.851 billion</dd>
     <dd class="invisible">FY 2017 Enacted: $2.932 billion</dd>
 
-
 </dl>
+<script src="js/jquery-2.2.4.js">
+</script>
+<script>
+    "use strict";
+
+    $(document).ready(function(){
+        $("dd").click(function(){
+            $("dd").toggleClass("invisible");
+
+        })
+    });
+
+
+</script>
 
 
 </body>
