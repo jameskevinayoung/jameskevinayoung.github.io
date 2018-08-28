@@ -65,7 +65,6 @@
 // console.log(countReps("Mississippi"));
 
 
-
 //multiply function that takes 2 parameters num1 and num2 where you multiply the two parameters without the "*" key. make a loop:
 
 // function multiplication(x, y){
@@ -121,8 +120,6 @@
 // console.log(summation(5));
 // console.log(summation(7));
 // console.log(summation(9));
-
-
 
 
 // STUDY HALL 8/22/18
@@ -359,3 +356,18 @@
 // }
 //
 // callHound(dogs);
+
+
+function getSecondLargest(nums) {
+    var largestNum = 0;
+    var secondLargest = 0;
+    for (var i = 0; i < nums.length; i++) {
+        if (largestNum <= nums[i]) {
+            secondLargest = largestNum;
+            largestNum = nums[i];
+        } else if (secondLargest < nums[i]) {
+            secondLargest = nums[i];
+        }
+    }
+    return secondLargest;
+}
