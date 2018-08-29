@@ -19,7 +19,17 @@
 
         .highlighted {
             background-color: yellow;
-            font-weight: bold;
+        }
+
+        .btn {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
         }
 
         .listItems {
@@ -31,15 +41,22 @@
             background-color: skyblue;
             color: white;
         }
-        .flex-container{
+
+        .flex-container {
             display: flex;
             flex-direction: row;
-            justify-content: center;
-        }
-        img{
-            width: 200px;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: space-evenly;
 
         }
+
+        img {
+            width: 200px;
+            height: 50%;
+        }
+
+
     </style>
 
 
@@ -47,126 +64,128 @@
 <body>
 
 
-<h1>Frequently Asked Questions</h1>
-<h2>About the National Park Service</h2>
+    <h1>Frequently Asked Questions</h1>
+    <h2>About the National Park Service</h2>
 
-<dl>
-    <dt class="faQuestions">Who is the director of the National Park Service?</dt>
-    <dd class="invisible">Dan Smith is the deputy director exercising the authority of director for the National Park
-        Service.
-    </dd>
+    <dl>
+        <dt class="faQuestions">Who is the director of the National Park Service?</dt>
+        <dd class="invisible">Dan Smith is the deputy director exercising the authority of director for the National Park
+            Service.
+        </dd>
 
-    <dt class="faQuestions">What government agency oversees the National Park Service?</dt>
-    <dd class="invisible">The National Park Service is a bureau of the Department of the Interior. Directly overseeing
-        its operation is
-        the department's Assistant Secretary for Fish, Wildlife and Parks.
-    </dd>
+        <dt class="faQuestions">What government agency oversees the National Park Service?</dt>
+        <dd class="invisible">The National Park Service is a bureau of the Department of the Interior. Directly overseeing
+            its operation is
+            the department's Assistant Secretary for Fish, Wildlife and Parks.
+        </dd>
 
-    <dt class="faQuestions">How many employees are in the National Park Service?</dt>
-    <dd class="invisible">Permanent, temporary, and seasonal employees: More than 20,000</dd>
-    <dd class="invisible">Volunteers: More than 315,000 in 2017</dd>
+        <dt class="faQuestions">How many employees are in the National Park Service?</dt>
+        <dd class="invisible">Permanent, temporary, and seasonal employees: More than 20,000</dd>
+        <dd class="invisible">Volunteers: More than 315,000 in 2017</dd>
 
-    <dt class="faQuestions">How old is the National Park System?</dt>
-    <dd class="invisible">The National Park Service was created by an act signed by President Woodrow Wilson on August
-        25, 1916.
-        Yellowstone National Park was established by an act signed by President Ulysses S. Grant on March 1, 1872, as
-        the nation's first national park. View the National Park System timeline.
-    </dd>
-
-
-    <dt class="faQuestions">What is the origin of the National Park Service arrowhead?</dt>
-    <dd class="invisible">The arrowhead was authorized as the official National Park Service emblem by the Secretary of
-        the Interior on
-        July 20, 1951. The components of the arrowhead may have been inspired by key attributes of the National Park
-        System, with the sequoia tree and bison representing vegetation and wildlife, the mountains and water
-        representing scenic and recreational values, and the arrowhead itself representing historical and archeological
-        values. Read more about the history of the arrowhead and other elements of NPS visual design.
-    </dd>
-    <dd class="invisible">The NPS allows limited use of the NPS arrowhead when doing so contributes to our work. Learn
-        how to request
-        permission to use the arrowhead.
-    </dd>
-
-    <dt class="faQuestions">How many areas are in the National Park System?</dt>
-    <dd class="invisible">The system includes 417 areas covering more than 85 million acres in every state, the District
-        of Columbia,
-        American Samoa, Guam, Puerto Rico, and the Virgin Islands. These areas include national parks, monuments,
-        battlefields, military parks, historical parks, historic sites, lakeshores, seashores, recreation areas, scenic
-        rivers and trails, and the White House. Learn more about national park designations. See the complete list of
-        National Park Service units and affiliated areas by type and number.
-    </dd>
+        <dt class="faQuestions">How old is the National Park System?</dt>
+        <dd class="invisible">The National Park Service was created by an act signed by President Woodrow Wilson on August
+            25, 1916.
+            Yellowstone National Park was established by an act signed by President Ulysses S. Grant on March 1, 1872, as
+            the nation's first national park. View the National Park System timeline.
+        </dd>
 
 
-    <dt class="faQuestions">What is the largest national park site? Smallest?</dt>
-    <dd class="invisible">Largest: Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres</dd>
-    <dd class="invisible">Smallest: Thaddeus Kosciuszko National Memorial, PA, at 0.02 acres</dd>
+        <dt class="faQuestions">What is the origin of the National Park Service arrowhead?</dt>
+        <dd class="invisible">The arrowhead was authorized as the official National Park Service emblem by the Secretary of
+            the Interior on
+            July 20, 1951. The components of the arrowhead may have been inspired by key attributes of the National Park
+            System, with the sequoia tree and bison representing vegetation and wildlife, the mountains and water
+            representing scenic and recreational values, and the arrowhead itself representing historical and archeological
+            values. Read more about the history of the arrowhead and other elements of NPS visual design.
+        </dd>
+        <dd class="invisible">The NPS allows limited use of the NPS arrowhead when doing so contributes to our work. Learn
+            how to request
+            permission to use the arrowhead.
+        </dd>
+
+        <dt class="faQuestions">How many areas are in the National Park System?</dt>
+        <dd class="invisible">The system includes 417 areas covering more than 85 million acres in every state, the District
+            of Columbia,
+            American Samoa, Guam, Puerto Rico, and the Virgin Islands. These areas include national parks, monuments,
+            battlefields, military parks, historical parks, historic sites, lakeshores, seashores, recreation areas, scenic
+            rivers and trails, and the White House. Learn more about national park designations. See the complete list of
+            National Park Service units and affiliated areas by type and number.
+        </dd>
 
 
-    <dt class="faQuestions">How many people visit the national parks?</dt>
-    <dd class="invisible">Total recreation visitors to the national parks in 2017: 330,882,751</dd>
+        <dt class="faQuestions">What is the largest national park site? Smallest?</dt>
+        <dd class="invisible">Largest: Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres</dd>
+        <dd class="invisible">Smallest: Thaddeus Kosciuszko National Memorial, PA, at 0.02 acres</dd>
 
 
-    <dt class="faQuestions">What is the most-visited national park?</dt>
-    <dd class="invisible">list of most visited sites in National Parks Service</dd>
+        <dt class="faQuestions">How many people visit the national parks?</dt>
+        <dd class="invisible">Total recreation visitors to the national parks in 2017: 330,882,751</dd>
 
 
-    <dt class="faQuestions">What is the National Park Service budget?</dt>
-    <dd class="invisible">Fiscal Year (FY) 2014 Enacted: $2.98 billion</dd>
-    <dd class="invisible">FY 2015 Enacted: $2.615 billion</dd>
-    <dd class="invisible">FY 2016 Enacted:$2.851 billion</dd>
-    <dd class="invisible">FY 2017 Enacted: $2.932 billion</dd>
-
-</dl>
+        <dt class="faQuestions">What is the most-visited national park?</dt>
+        <dd class="invisible">list of most visited sites in National Parks Service</dd>
 
 
-<button class="btn">Highlight Last</button>
+        <dt class="faQuestions">What is the National Park Service budget?</dt>
+        <dd class="invisible">Fiscal Year (FY) 2014 Enacted: $2.98 billion</dd>
+        <dd class="invisible">FY 2015 Enacted: $2.615 billion</dd>
+        <dd class="invisible">FY 2016 Enacted:$2.851 billion</dd>
+        <dd class="invisible">FY 2017 Enacted: $2.932 billion</dd>
+
+    </dl>
 
 
-<h3 class="quickFacts" id="wrangell">Quick Facts: Wrangell St. Elias</h3>
-<ul id="wrangellFacts">
-    <li class="factItem number1">Located in Alaska</li>
-    <li class="factItem number2">Largest US National Park: 13.17 million acres</li>
-    <li class="factItem number3">Larger than the entire country of Switzerland</li>
-    <li class="factItem number4">Part of the UNESCO World Heritage Site named Kluane/Wrangell-St.Elias/Glacier
-        Bay/Tatshenshini-Alsek
-    </li>
-</ul>
-
-<h3 class="quickFacts" id="yellowstone">Quick Facts: Yellowstone</h3>
-
-<ul id="yellowstoneFacts">
-    <li class="factItem number1">World's First National Park, located in three states :Wyoming(96%), Montana(3%), and
-        Idaho(1%)
-    </li>
-    <li class="factItem number2">More than 300 active geysers and more than 290 waterfalls</li>
-    <li class="factItem number3">Home to the famous Old Faithful, a geyser, erupts every 92 minutes on average</li>
-    <li class="factItem number4">home to 67 species of mammals, 285 species of birds, 16 species of fish, 6 species of
-        reptiles, 5 species of amphibians, and more than 7 aquatic nuisance species
-    </li>
-
-</ul>
+    <button class="btn">Highlight Last</button>
 
 
-<h3 class="quickFacts" id="guadalupe">Quick Facts: Guadalupe Mountains National Park</h3>
-<ul id="guadalupeFacts">
-    <li class="factItem number1">Located in Texas</li>
-    <li class="factItem number2">Has the world's most extensive Permian fossil reef</li>
-    <li class="factItem number3">Evidence of early human life in the Guadalupe Mountain region dates back 10,000 years
-    </li>
-    <li class="factItem number4">16 different species of bats found in Guadalupe National Park</li>
-</ul>
+    <h3 class="quickFacts" id="wrangell">Quick Facts: Wrangell St. Elias</h3>
+    <ul id="wrangellFacts">
+        <li class="factItem number1">Located in Alaska</li>
+        <li class="factItem number2">Largest US National Park: 13.17 million acres</li>
+        <li class="factItem number3">Larger than the entire country of Switzerland</li>
+        <li class="factItem number4">Part of the UNESCO World Heritage Site named Kluane/Wrangell-St.Elias/Glacier
+            Bay/Tatshenshini-Alsek
+        </li>
+    </ul>
+
+    <h3 class="quickFacts" id="yellowstone">Quick Facts: Yellowstone</h3>
+
+    <ul id="yellowstoneFacts">
+        <li class="factItem number1">World's First National Park, located in three states :Wyoming(96%), Montana(3%), and
+            Idaho(1%)
+        </li>
+        <li class="factItem number2">More than 300 active geysers and more than 290 waterfalls</li>
+        <li class="factItem number3">Home to the famous Old Faithful, a geyser, erupts every 92 minutes on average</li>
+        <li class="factItem number4">home to 67 species of mammals, 285 species of birds, 16 species of fish, 6 species of
+            reptiles, 5 species of amphibians, and more than 7 aquatic nuisance species
+        </li>
+
+    </ul>
 
 
-<footer>
-    <div class="flex-container">
-        <div class="pictureFrame"><img src="img/outdoorAfro1_NationalForest.jpg" alt="OutDoorAfro Women"></div>
-        <div class="pictureFrame"><img src="img/outdoorAfro2_NationalForest.jpg" alt="OutDoorAfro Children"></div>
-        <div class="pictureFrame"><img src="img/outdoorAfro3_NationalForest.jpg" alt="OutDoorAfro Group"></div>
-    </div>
+    <h3 class="quickFacts" id="guadalupe">Quick Facts: Guadalupe Mountains National Park</h3>
+    <ul id="guadalupeFacts">
+        <li class="factItem number1">Located in Texas</li>
+        <li class="factItem number2">Has the world's most extensive Permian fossil reef</li>
+        <li class="factItem number3">Evidence of early human life in the Guadalupe Mountain region dates back 10,000 years
+        </li>
+        <li class="factItem number4">16 different species of bats found in Guadalupe National Park</li>
+    </ul>
 
 
+    <footer>
+        <div class="flex-container">
+            <div class="pictureFrame"><img src="img/outdoorAfro1_NationalForest.jpg" id="women" alt="OutDoorAfro Women">
+            </div>
+            <div class="pictureFrame"><img src="img/outdoorAfro2_NationalForest.jpg" id="child" alt="OutDoorAfro Children">
+            </div>
+            <div class="pictureFrame"><img src="img/outdoorAfro3_NationalForest.jpg" id="group" alt="OutDoorAfro Group">
+            </div>
+        </div>
 
-</footer>
+
+    </footer>
 
 
 <script src="js/jquery-2.2.4.js">
@@ -185,7 +204,23 @@
             })
         });
         $(".btn").click(function () {
-            $(".number4").toggleClass("highlighted");
+            $(".number4").toggleClass("highlighted")//my orginal
+            // $("ul").each(function (index, element) { //jquery .each method
+            //     $(element).children().last().toggleClass("highlighted")
+            // });
+
+
+            //forEach approach
+            //array.from($("ul")).forEach(function(element){
+            // $(element).children().last().toggleClass("highlight");
+            // })
+
+            //    var lists = $("ul"); //for loop example
+            //for(var i = 0; i <lists.length; i++){
+            // $(lists[i]).children().last().toggleClass("highlighted")
+            // }
+
+
         });
 
 
