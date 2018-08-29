@@ -8,7 +8,7 @@
 
         body {
             background-color: navajowhite;
-            font-family: AppleGothic;
+            font-family: Helvetica;
 
         }
 
@@ -20,11 +20,14 @@
             background-color: yellow;
             font-weight: bold;
         }
-        /*.listItems{*/
-
-            /*font-weight: bold;*/
-        /*}*/
-
+        .listItems{
+            /**/
+            font-weight: bold;
+        }
+        .firstLi{
+            background-color: skyblue;
+            color: white;
+        }
     </style>
 
 
@@ -109,19 +112,19 @@
 
 <h3 class="quickFacts" id="wrangell">Quick Facts: Wrangell St. Elias</h3>
 <ul id="wrangellFacts">
-    <li class="listItems factItem1">Located in Alaska </li>
-    <li class="listItems factItem2">Largest US National Park: 13.17 million acres</li>
-    <li class="listItems factItem3">Larger than the entire country of Switzerland</li>
-    <li class="listItems factItem4">Part of the UNESCO World Heritage Site named Kluane/Wrangell-St.Elias/Glacier Bay/Tatshenshini-Alsek</li>
+    <li class="factItem number1">Located in Alaska </li>
+    <li class="factItem number2">Largest US National Park: 13.17 million acres</li>
+    <li class="factItem number3">Larger than the entire country of Switzerland</li>
+    <li class="factItem number4">Part of the UNESCO World Heritage Site named Kluane/Wrangell-St.Elias/Glacier Bay/Tatshenshini-Alsek</li>
 </ul>
 
 <h3 class="quickFacts" id="yellowstone">Quick Facts: Yellowstone</h3>
 
 <ul id="yellowstoneFacts">
-    <li class="listItems factItem1">World's First National Park, located in three states :Wyoming(96%), Montana(3%), and Idaho(1%)</li>
-    <li class="listItems factItem2">More than 300 active geysers and more than 290 waterfalls</li>
-    <li class="listItems factItem3">Home to the famous Old Faithful, a geyser, erupts every 92 minutes on average</li>
-    <li class="listItems factItem4">home to 67 species of mammals, 285 species of birds, 16 species of fish, 6 species of reptiles, 5 species of amphibians, and more than 7 aquatic nuisance species</li>
+    <li class="factItem number1">World's First National Park, located in three states :Wyoming(96%), Montana(3%), and Idaho(1%)</li>
+    <li class="factItem number2">More than 300 active geysers and more than 290 waterfalls</li>
+    <li class="factItem number3">Home to the famous Old Faithful, a geyser, erupts every 92 minutes on average</li>
+    <li class="factItem number4">home to 67 species of mammals, 285 species of birds, 16 species of fish, 6 species of reptiles, 5 species of amphibians, and more than 7 aquatic nuisance species</li>
 
 </ul>
 
@@ -129,11 +132,20 @@
 
 <h3 class="quickFacts" id="guadalupe">Quick Facts: Guadalupe Mountains National Park</h3>
 <ul id="guadalupeFacts">
-    <li class="listItems factItem1">Located in Texas</li>
-    <li class="listItems factItem2">Has the world's most extensive Permian fossil reef</li>
-    <li class="listItems factItem3">Evidence of early human life in the Guadalupe Mountain region dates back 10,000 years</li>
-    <li class="listItems factItem4">16 different species of bats found in Guadalupe National Park</li>
+    <li class="factItem number1">Located in Texas</li>
+    <li class="factItem number2">Has the world's most extensive Permian fossil reef</li>
+    <li class="factItem number3">Evidence of early human life in the Guadalupe Mountain region dates back 10,000 years</li>
+    <li class="factItem number4">16 different species of bats found in Guadalupe National Park</li>
 </ul>
+
+
+<footer>
+    <div class="pictureFrame"><img src="img/outdoorAfro1_NationalForest.jpg" alt="OutDoorAfroWomen"></div>
+    <div class="pictureFrame"><img src="img/outdoorAfro2_NationalForest.jpg" alt="OutDoorAfroChildren"></div>
+    <div class="pictureFrame"><img src="img/outdoorAfro3_NationalForest.jpg" alt="OutDoorAfroGroup"></div>
+    
+    
+</footer>
 
 
 <script src="js/jquery-2.2.4.js">
@@ -151,13 +163,22 @@ $(function(){
             $(this).toggleClass("highlighted");
         })
     });
+        $(".btn").click(function(){
+            $(".number4").toggleClass("highlighted");
+        });
 
-    $(document).ready(function(){
-        $(".quickFacts").click(function(){
-            $("#guadalupeFacts").children().css("font-weight", "bold");
+
+        $("h3").click(function(){
+            $(this).next().toggleClass("listItems");
+        });
+
+        $("li").click(function(){
+            $(this).parent().children().first().toggleClass("firstLi");
         })
-    });
+
 })
+
+
 
 
 
