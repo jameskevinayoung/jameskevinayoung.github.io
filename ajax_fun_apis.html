@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FUN API</title>
+</head>
+<body>
+<h1 id="yo">Yo What Up </h1>
+
+<script src="js/jquery-2.2.4.js"></script>
+
+<script>
+"use strict"
+//
+    $(function(){
+
+        //
+        console.log("Yo what up");
+        var chartId = prompt("Pick a number, any number");
+        $.ajax("https://rickandmortyapi.com/api/character/" + chartId)
+            .done(function(data){
+                console.log(data);
+                $("#yo").text("Yo What Up " + data.name);
+            })
+            .fail(function(jqXhr, status, error){
+                alert("There was an error! Check the console for details");
+                console.log("Response status: " + status);
+                console.log("Error object: " + error);
+            })
+
+
+    })
+
+
+
+</script>
+
+</body>
+</html>
