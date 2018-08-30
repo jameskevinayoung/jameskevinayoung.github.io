@@ -30,10 +30,10 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         }
 
         .listItems {
-            /**/
             font-weight: bold;
         }
 
@@ -136,7 +136,7 @@
     </dl>
 
 
-    <button class="btn">Highlight Last</button>
+    <button class="btn" id="highlight">Highlight Last</button>
 
 
     <h3 class="quickFacts" id="wrangell">Quick Facts: Wrangell St. Elias</h3>
@@ -176,12 +176,16 @@
 
     <footer>
         <div class="flex-container">
-            <div class="pictureFrame"><img src="img/outdoorAfro1_NationalForest.jpg" id="women" alt="OutDoorAfro Women">
-            </div>
-            <div class="pictureFrame"><img src="img/outdoorAfro2_NationalForest.jpg" id="child" alt="OutDoorAfro Children">
-            </div>
-            <div class="pictureFrame"><img src="img/outdoorAfro3_NationalForest.jpg" id="group" alt="OutDoorAfro Group">
-            </div>
+            <div class="pictureFrame"><img src="img/outdoorAfro1_NationalForest.jpg" id="women" alt="OutDoorAfro Women"><br>
+                <button class="btn" id="switch1">Switch</button></div>
+
+
+            <div class="pictureFrame"><img src="img/outdoorAfro2_NationalForest.jpg" id="child" alt="OutDoorAfro Children"><br>
+                <button class="btn" id="switch2">Switch</button></div>
+
+            <div class="pictureFrame"><img src="img/outdoorAfro3_NationalForest.jpg" id="group" alt="OutDoorAfro Group"><br>
+                <button class="btn" id="switch3">Switch</button></div>
+
         </div>
 
 
@@ -203,8 +207,8 @@
                 $(this).toggleClass("highlighted");
             })
         });
-        $(".btn").click(function () {
-            $(".number4").toggleClass("highlighted")//my orginal
+        $("#highlight").click(function () {
+            $(".number4").toggleClass("highlighted")//my original
             // $("ul").each(function (index, element) { //jquery .each method
             //     $(element).children().last().toggleClass("highlighted")
             // });
@@ -231,6 +235,9 @@
         $("li").click(function () {
             $(this).parent().children().first().toggleClass("firstLi");
         })
+
+        $()
+
 
     })
 
