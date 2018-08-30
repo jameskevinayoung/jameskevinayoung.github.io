@@ -12,7 +12,9 @@
             width: 80%;
             margin: auto;
         }
-
+        ul{
+            display: none;
+        }
         .invisible {
             display: none;
         }
@@ -62,7 +64,13 @@
 
 </head>
 <body>
+<div class="newsletter">
+    <h1 id="signup">Would you like more Park Facts??!!??!! Sign of for our Newsletter!! <span id="closeSignup">x</span> </h1>
+</div>
 
+<div>
+    <h2>Please register for the sign</h2>
+</div>
 
     <h1>Frequently Asked Questions</h1>
     <h2>About the National Park Service</h2>
@@ -177,14 +185,14 @@
     <footer>
         <div class="flex-container">
             <div class="pictureFrame"><img src="img/outdoorAfro1_NationalForest.jpg" id="women" alt="OutDoorAfro Women"><br>
-                <button class="btn" id="switch1">Switch</button></div>
+                <button class="btn switch" id="switch1">Switch</button></div>
 
 
             <div class="pictureFrame"><img src="img/outdoorAfro2_NationalForest.jpg" id="child" alt="OutDoorAfro Children"><br>
-                <button class="btn" id="switch2">Switch</button></div>
+                <button class="btn switch" id="switch2">Switch</button></div>
 
             <div class="pictureFrame"><img src="img/outdoorAfro3_NationalForest.jpg" id="group" alt="OutDoorAfro Group"><br>
-                <button class="btn" id="switch3">Switch</button></div>
+                <button class="btn switch" id="switch3">Switch</button></div>
 
         </div>
 
@@ -197,6 +205,20 @@
 <script>
     "use strict";
     $(function () {
+
+
+        $('#closeSignup').click(function() {
+            $('#signup').slideUp(2000);
+        });
+
+        $('h3').click(function() {
+            $(this).next().slideToggle(2000, "swing");
+                // "duration", "5000""
+                // "easing", "easeInOutExpo"});
+        });
+
+
+
         $(document).ready(function () {
             $("h2").click(function () {
                 $("dd").toggleClass("invisible");
@@ -234,9 +256,30 @@
 
         $("li").click(function () {
             $(this).parent().children().first().toggleClass("firstLi");
-        })
+        });
 
-        $()
+
+        //bonus pictures
+        $(document).ready(function() {
+            $(".switch").click(function() {
+
+                var src = $('#women').attr('src');
+
+                //if the current image is picture1.png, change it to picture2.png
+                if(src == 'picture1.png') {
+                    $("#women").attr("src","picture2.png");
+
+                    //if the current image is picture2.png, change it to picture3.png
+                } else if(src == "picture2.png") {
+                    $("#myimage").attr("src","picture2.png");
+
+                    //if the current image is anything else, change it back to picture1.png
+                } else {
+                    $("#myimage").attr("src","picture2.png");
+                }
+            });
+        });
+
 
 
     })
