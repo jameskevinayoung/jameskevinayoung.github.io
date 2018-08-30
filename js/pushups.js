@@ -358,16 +358,40 @@
 // callHound(dogs);
 
 
-function getSecondLargest(nums) {
-    var largestNum = 0;
-    var secondLargest = 0;
-    for (var i = 0; i < nums.length; i++) {
-        if (largestNum <= nums[i]) {
-            secondLargest = largestNum;
-            largestNum = nums[i];
-        } else if (secondLargest < nums[i]) {
-            secondLargest = nums[i];
-        }
-    }
-    return secondLargest;
+// function getSecondLargest(nums) {
+//     var largestNum = 0;
+//     var secondLargest = 0;
+//     for (var i = 0; i < nums.length; i++) {
+//         if (largestNum <= nums[i]) {
+//             secondLargest = largestNum;
+//             largestNum = nums[i];
+//         } else if (secondLargest < nums[i]) {
+//             secondLargest = nums[i];
+//         }
+//     }
+//     return secondLargest;
+// }
+
+
+var car={
+    make: "Jaguar",
+    model: "XFR-S Sportbrake",
+    year: "2019",
+    color: "Majestic Royal Blue",
+    engine: {
+        capacity: "2995 cc",
+        horsepower: "380",
+        transmission: "Eight-Speed ZF 8HP70",
+        acceleration: "5.3 sec (0-60)",
+    } ,
+    accelerate: flevel){
+    this.speed+= level*3};
+    brake: f(level){
+        this.speed-= level*5};
+
+    speed: "220 mph (limited)",
+    honk: f(
+        console.log("MOOOOVEE B, Get out the way!!!!")
+    ),
+    price: "71215",
 }
