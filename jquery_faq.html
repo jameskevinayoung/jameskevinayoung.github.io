@@ -65,11 +65,11 @@
 </head>
 <body>
 <div class="newsletter">
-    <h1 id="signup">Would you like more Park Facts??!!??!! Sign of for our Newsletter!! <span id="closeSignup">x</span> </h1>
+    <h1 id="signup">Would you like more Park Facts??!!??!! Sign of for our Newsletter!! <span id="closeSignup"><code>x</code></span> </h1>
 </div>
 
 <div>
-    <h2>Please register for the sign</h2>
+    <h2 class="registerPrompt" style="display: none">Please register to this site</h2>
 </div>
 
     <h1>Frequently Asked Questions</h1>
@@ -213,11 +213,11 @@
 
         $('h3').click(function() {
             $(this).next().slideToggle(2000, "swing");
-                // "duration", "5000""
-                // "easing", "easeInOutExpo"});
         });
 
-
+        $(document).ready(function() {
+            $('.registerPrompt').fadeIn(16000);
+        });
 
         $(document).ready(function () {
             $("h2").click(function () {
@@ -260,25 +260,10 @@
 
 
         //bonus pictures
-        $(document).ready(function() {
-            $(".switch").click(function() {
-
-                var src = $('#women').attr('src');
-
-                //if the current image is picture1.png, change it to picture2.png
-                if(src == 'picture1.png') {
-                    $("#women").attr("src","picture2.png");
-
-                    //if the current image is picture2.png, change it to picture3.png
-                } else if(src == "picture2.png") {
-                    $("#myimage").attr("src","picture2.png");
-
-                    //if the current image is anything else, change it back to picture1.png
-                } else {
-                    $("#myimage").attr("src","picture2.png");
-                }
-            });
-        });
+        var womenImage = "img/outdoorAfro1_NationalForest.jpg";
+        var kidImage = "img/outdoorAfro2_NationalForest.jpg";
+        var groupImage = "img/outdoorAfro3_NationalForest.jpg";
+        $('div')
 
 
 
