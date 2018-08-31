@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<main lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Tools and Hacks Warehouse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
         tr, th, td {
             border: 2px solid black;
@@ -49,9 +50,9 @@
 
     </style>
 </head>
-<h1 class="mainHeader">Tools and Hacks</h1>
-
-<table id="products">
+<h1 class="jumbotron justify-content-center text-center mainHeader">Tools and Hacks</h1>
+<main class="container"></main>
+<table id="products" class="table">
     <thead>
     <tr>
         <th>Title</th>
@@ -65,10 +66,12 @@
 </table>
 <br/>
 <button class="button" type="button" id="refreshInventory">Refresh inventory</button>
+</main>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script>
     (function() {
         "use strict";
@@ -78,34 +81,21 @@
         //       HINT: Your data should come back as a JSON object; use console.log() to inspect
         //             its contents and fields
         //       HINT: You will want to target #insertProducts for your new HTML elements
-/**
- * THis example refactors the get request to append without duplicating rows
- *
- *
- * var listTools = function(tools, replace){
- *     //clears out whatever was there
- *     $()
- * }
- *
- *
- *
- *
- *
- * */
+
 
         //AJAX REQUEST FOR INVENTORY SET INTO TABLE
-        $(document).ready(function(){
-            $.get("data/inventory.json",function(data){
-                var inventory = '';
-                $.each(data, function(key, item){
+        $(document).ready(function(){ //when the doc loads
+            $.get("data/inventory.json",function(data){ //get data from json, do this function
+                var inventory = '';  //in this variable hold
+                $.each(data, function(key, item){ //each set of items in the array
                     inventory += '<tr>';
                     inventory += "<td>"+item.title+"</td>";
                     inventory += "<td>"+item.quantity+"</td>";
                     inventory += "<td>"+item.price+"</td>";
                     inventory += "<td>"+item.categories+"</td>";
-                    inventory += '</tr>';
+                    inventory += '</tr>'; //display table row with a data cell corresponding to desired property elements in each object
                 });
-                $("#insertProducts").append(inventory);
+                $("#insertProducts").append(inventory); //append the HTML at the table body with the amended inventory
             })
         });
         //REFRESH BUTTON
