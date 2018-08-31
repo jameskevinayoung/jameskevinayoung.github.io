@@ -1,34 +1,61 @@
 [
-    {
-        "title": "Hammer",
-        "quantity": 25,
-        "categories": [
-        "tool"
-        ],
-        "price": 20
-    }, {
-        "title": "Drill",
-        "quantity": 5,
-        "categories": [
-        "tool",
-        "powered"
-        ],
-        "price": 100
-    }, {
-        "title": "Mower",
-        "quantity": 5,
-        "categories": [
-        "tool",
-        "gas",
-        "outdoor"
-        ],
-        "price": 200
-    }, {
-        "title": "Screwdrivers",
-        "quantity": 25,
-        "categories": [
-        "tool"
-        ],
-        "price": 10
-    }
+  {
+    "id": 1,
+    "title": "Hammer",
+    "quantity": 500,
+    "categories": [
+      "tool"
+    ],
+    "price": 20
+  },
+  {
+    "id": 2,
+    "title": "Drill",
+    "quantity": 5,
+    "categories": [
+      "tool",
+      " powered"
+    ],
+    "price": 100
+  },
+  {
+    "id": 3,
+    "title": "Mower",
+    "quantity": 5,
+    "categories": [
+      "tool",
+      " gas",
+      " outdoor"
+    ],
+    "price": 200
+  },
+  {
+    "id": 4,
+    "title": "Screwdrivers",
+    "quantity": 25,
+    "categories": [
+      "tool"
+    ],
+    "price": 10
+  },
+  {
+  "id": 5,
+  "title": "Duck Tape",
+  "quantity": 2500,
+  "categories": [
+    "tool"
+  ],
+  "price": 5
+  },
+  {
+    "id": 6,
+    "title": "Leatherman Charge TTI Multitool",
+    "quantity": 4000,
+    "categories": [
+      "tool",
+      " outdoor"
+    ],
+    "price": 170
+  }
+
 ]
