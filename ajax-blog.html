@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Tools and Hacks' Outdoorsman</title>
-
     <style>
         body{
             width: 80%;
             margin: 0 auto;
             padding: 0 auto;
+
         }
         hr.ruler {
             overflow: visible; /* For IE */
@@ -33,7 +33,7 @@
 
 <h1 id="mainHeader">Tools and Hacks' Outdoorsman</h1>
 <hr class="ruler"/>
-<p>The blog site for the man or woman that is looking to master nature's terrain and outlive the next person during an apocalyptic
+<p id="tagLine">The blog site for the man or woman that is looking to master nature's terrain and outlive the next person during an apocalyptic
     event!</p>
 
 <section id="posts"> <!--CONTAINS ALL POSTS-->
@@ -56,13 +56,17 @@
 
 
 <script src="js/jquery-2.2.4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 <script>
     "use strict"
 
-
+//ON DOCUMENT LOAD: get request that pulls json blog posts  and appending to the body
 $(document).ready(function(){
     $.get("data/blog.json", function(data){
         var blogposts = "";
+
+        //jQuery .each pull for to load each key with each item requested
         $.each(data, function(key,item){
             blogposts += "<h2>"+item.title+"</h2>";
             blogposts += "<p class=\"post-meta\">"+item.content+"</p>";
