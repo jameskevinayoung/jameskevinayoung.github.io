@@ -55,9 +55,8 @@
         <h2 class="post-title">
             <!--<a href="" rel="external" target="_blank"></a> &lt;!&ndash; This link will hold the post title &ndash;&gt;-->
         </h2>
+        <span class="post-date"></span> <!-- DATE-->
         <p class="post-meta">
-            <span class="post-date"></span> <!-- DATE-->
-
             <span class="post-category"></span> <!-- POST CATEGORIES -->
         </p>
     </div>
@@ -82,8 +81,8 @@ $(document).ready(function(){
         //jQuery .each pull for to load each key with each item requested
         $.each(data, function(key,item){
             blogposts += "<h2>"+item.title+"</h2>";
-            blogposts += "<p class=\"post-meta\">"+item.content+"</p>";
             blogposts += "<span class=\"post-date\">"+item.date+"</span>";
+            blogposts += "<p class=\"post-meta\">"+item.content+"</p>";
             blogposts += "<span class=\"post-category\">"+item.categories+"</span>";
         });
         $("#posts").append(blogposts);
