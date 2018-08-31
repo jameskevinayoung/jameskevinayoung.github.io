@@ -373,25 +373,47 @@
 // }
 
 
-var car={
-    make: "Jaguar",
-    model: "XFR-S Sportbrake",
-    year: "2019",
-    color: "Majestic Royal Blue",
-    engine: {
-        capacity: "2995 cc",
-        horsepower: "380",
-        transmission: "Eight-Speed ZF 8HP70",
-        acceleration: "5.3 sec (0-60)",
-    } ,
-    accelerate: flevel){
-    this.speed+= level*3};
-    brake: f(level){
-        this.speed-= level*5};
+// var car={
+//     make: "Jaguar",
+//     model: "XFR-S Sportbrake",
+//     year: "2019",
+//     color: "Majestic Royal Blue",
+//     engine: {
+//         capacity: "2995 cc",
+//         horsepower: "380",
+//         transmission: "Eight-Speed ZF 8HP70",
+//         acceleration: "5.3 sec (0-60)",
+//     } ,
+//     accelerate: flevel){
+//     this.speed+= level*3};
+//     brake: f(level){
+//         this.speed-= level*5};
+//
+//     speed: "220 mph (limited)",
+//     honk: f(
+//         console.log("MOOOOVEE B, Get out the way!!!!")
+//     ),
+//     price: "71215",
+// }
 
-    speed: "220 mph (limited)",
-    honk: f(
-        console.log("MOOOOVEE B, Get out the way!!!!")
-    ),
-    price: "71215",
+
+//RECURSIVE PUSHUP USING FACTORIAL
+
+function factorial(n){
+    if (n == 0){
+        return 1;
+    }else {
+        return factorial(n - 1) * n;
+    }
 }
+console.log(factorial(12));
+
+/** factorial(7) = 5040
+* return factorial(6) * 7; -> 720 * 7 -> 5040
+* return factorial(5) * 6; -> 120* 6 -> 720
+* return factorial(4) * 5; -> 24 * 5 -> 120
+* return factorial(3) * 4; -> 6 * 4 -> 24
+* return factorial(2) * 3; -> 2 * 3 -> 6
+* return factorial(1) * 2; -> 1 * 2 -> 2
+* return factorial(0) * 1; -> 1 * 1 -> 1
+*/
