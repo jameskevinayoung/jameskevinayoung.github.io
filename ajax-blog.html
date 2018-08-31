@@ -2,14 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>James' Tools and Hacks</title>
+    <title>Tools and Hacks' Outdoorsman</title>
+
+    <style>
+        body{
+            width: 80%;
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+        hr.ruler {
+            overflow: visible; /* For IE */
+            padding: 0;
+            border: none;
+            border-top: medium double #cc5500;
+            color: #cc5500;
+            text-align: center;
+        }
+        hr.ruler:after {
+            content: "§";
+            display: inline-block;
+            position: relative;
+            top: -0.7em;
+            font-size: 1.5em;
+            padding: 0 0.25em;
+            background: white;
+        }
+    </style>
 </head>
 <body>
-<section id="posts">
+
+<h1 id="mainHeader">Tools and Hacks' Outdoorsman</h1>
+<hr class="ruler"/>
+<p>The blog site for the man or woman that is looking to master nature's terrain and outlive the next person during an apocalyptic
+    event!</p>
+
+<section id="posts"> <!--CONTAINS ALL POSTS-->
+
+    <div class="post" id="postTemplate" style="display: none;"> <!-- POST START -->
+        <h2 class="post-title">
+            <!--<a href="" rel="external" target="_blank"></a> &lt;!&ndash; This link will hold the post title &ndash;&gt;-->
+        </h2>
+        <p class="post-meta">
+            <span class="post-date"></span> <!-- DATE-->
+            •
+            <span class="post-category"></span> <!-- POST CATEGORIES -->
+        </p>
+    </div>
+
+
 
 </section>
-
-
 
 
 
@@ -18,7 +60,31 @@
     "use strict"
 
 
+$(document).ready(function(){
+    $.get("data/blog.json", function(data){
+        var blogposts = "";
+        $.each(data, function(key,item){
+            blogposts += "<h2>"+item.title+"</h2>";
+            blogposts += "<p class=\"post-meta\">"+item.content+"</p>";
+            blogposts += "<span class=\"post-date\">"+item.date+"</span>";
+            blogposts += "<span class=\"post-category\">"+item.categories+"</span>";
+        });
+        $("#posts").append(blogposts);
+    }).done(function(){
+        console.log("posts delivered");
+    }).fail(function(jqXhr,status,error){
+        alert("Error detected check console");
+        console.log("Current status: "+status);
+        console.log("Error status: " + error);
+    })
 
+
+
+
+
+
+
+})
 
 
 
