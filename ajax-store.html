@@ -3,26 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Tools and Hacks Warehouse</title>
+    <style>
+        tr, th, td {
+            border: 2px solid black;
+        }
+    </style>
 </head>
-<body>
+<h1>Tools and Hacks</h1>
 
+<table id="products">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Categories</th>
+    </tr>
+    </thead>
+    <tbody id="insertProducts"></tbody>
+</table>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-<script src="js/jquery-2.2.4.js"></script>
 <script>
-    "use strict"
+    (function() {
+        "use strict";
+        // TODO: Create an ajax GET request for /data/inventory.json
 
-$(function(){
+        // TODO: Take the data from inventory.json and append it to the products table
+        //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+        //             its contents and fields
+        //       HINT: You will want to target #insertProducts for your new HTML elements
 
-    var retrieveInventory = $.ajax('/data/')
+        $(document).ready(function(){
+            $.getJSON("data/inventory.json",function(data){
+                var inventory = '';
+                $.each(data, function(key, item){
+                    inventory += '<tr>';
+                    inventory += "<td>"+item.title+"</td>";
+                    inventory += "<td>"+item.quantity+"</td>";
+                    inventory += "<td>"+item.price+"</td>";
+                    inventory += "<td>"+item.categories+"</td>";
+                })
+            })
+        })
 
 
-
-
-})
-
+        // var result =$.ajax('data/inventory.json');
+        // console.log(result);
+        //
+        // result.done(function(data){
+        //     console.log(data);
+        //     data.forEach(function(item){
+        //         console.log(item.title);
+        //         console.log(item.quantity);
+        //         console.log(item.price);
+        //         console.log(item.categories);
+        //         $(".tabl").text(item.title);
+        //     })
+        // });
+    })();
 </script>
-
-
 </body>
 </html>
