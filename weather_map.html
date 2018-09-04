@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map Project</title>
+    <style>
+        body{
+            width: 80%;
+            height: 80%;
+            background-color: deepskyblue;
+            margin: auto;
+            padding: auto;
+        }
+        .container{
+            width: 100%;
+            border: 2px solid darkslategrey;
+            margin-top: 2em;
+            background-color: whitesmoke;
+        }
+        .container:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .dailyForecast{
+            width: 30%;
+            border: 1px solid darkslategrey;
+            padding: 1em;
+            height: 15.625em;
+            float: left;
+            text-align: center;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+<main>
+    <h1>Weather Application</h1>
+    <h2 class="location" id="cityName"></h2>
+    <section class="container row">
+      <section class="dailyForecast" id="dailyWeather1"></section>
+      <section class="dailyForecast" id="dailyWeather2"></section>
+      <section class="dailyForecast" id="dailyWeather3"></section>
+    </section>
+
+
+
+</main>
+
+<script src="js/jquery-2.2.4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+    "use strict";
+
+
+
+
+        //Get pull for WEATHER API for San Antonio, Texas, US
+        var key = localStorage.getItem("weatherApiKey");
+        var city = "San Antonio, US";
+        var url = "http://api.openweathermap.org/data/2.5/forecast";
+        $.ajax({
+            url: url,
+            dataType: "json",
+            type: "GET",
+            data: {
+                q: city,
+                appid: key,
+                units: "imperial",
+                cnt: "3"
+            },
+            success: function(data) {
+                console.log(data);
+                var weatherData = "";
+
+                $("#cityName").text(data.city.name);
+                $.each(data.list, function (index, val) {
+                    weatherData += "<div>";
+                    weatherData += "<h2>" + parseInt(val.main.temp_max)+ "/" + parseInt(val.main.temp_min) + "</h2>";
+                    weatherData += "<p>" + "Clouds: " + val.clouds.all + "%" + "</p>";
+                    weatherData += "<p>" + "Humidity: " + val.main.humidity + "</p>";
+                    weatherData += "<p>" + "Wind: " + val.wind.speed+" mph"+"</p>";
+                    weatherData += "<p>" + "Pressure: " + parseInt(val.main.pressure) + "</p>";
+                    weatherData += "</div>";
+                });
+                $("#dailyWeather1").html(weatherData);
+                $("#dailyWeather2").html(weatherData);
+                $("#dailyWeather3").html(weatherData);
+            }
+        })
+
+
+
+
+
+
+</script>
+</body>
+</html>
