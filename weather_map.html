@@ -34,6 +34,11 @@
             text-align: center;
 
         }
+        #map {
+            margin: auto;
+            width: 90%;
+            height: 40%;
+        }
 
 
 
@@ -43,25 +48,125 @@
 <main>
     <h1>Weather Application</h1>
     <h2 class="location" id="cityName"></h2>
-    <section class="container row">
-
-    </section>
-
+    <section style="text-align: center;" class="container" id="weatherdisplay"></section>
+    <div id="map"></div>
 
 
 </main>
 
 <script src="js/jquery-2.2.4.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKiicfa6glj24qA3027lRUZr3946IymEY"></script>
+<script type="text/javascript">
+    (function () {
+        "use strict";
 
+//SET MAP OPTIONS
+
+        var mapOptions = {
+            zoom: 20,//HOW CLOSE YOU WANT IT//
+            center: {
+                lat: 29.424801,
+                lng: -98.490100,
+            },
+
+
+            //SET MAP TYPE
+            mapTypeId: google.maps.MapTypeId.SATELLITE
+        };
+
+        //renders the map
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+
+        <!--GEOCODE the address-->
+
+
+        //set our address
+        var address = "245 E Commerce St, San Antonio, TX 78205";
+
+        //initiate Geocoder
+
+        var geocode = new google.maps.Geocoder();
+
+
+        //This is the request format: request:GeocoderRequest, callback:function(Array.<GeocoderResult>, GeocoderStatus)
+
+
+        /**This line is | requesting the geocode of (the "address" we gave it| and call back the array result, and the status.
+         * if the results are ok, recenter the map of the coordinates
+         * if the results are not, alert the user that the status of the request failed
+         */
+        geocode.geocode({"address": address}, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                map.setCenter(results[0].geometry.location);
+
+            } else {
+                alert("Geocoding was not successful - STATUS " + status);
+            }
+        });
+
+        <!--GEOCODE the address-->
+
+
+        // MAP MARKER
+        function addDropMarker() {//this function is created after vars were created; adds animation to the marker
+            //create a variable that holds our mapped location(lat/lng)
+            var Pizzaritas = {lat: 29.424801, lng: -98.490100};
+
+
+            //add the marker to the existing map.
+            var marker = new google.maps.Marker({
+                map: map,//represents the variable where we rendered the map
+                draggable: true,
+                animation: google.maps.Animation.DROP,
+                position: Pizzaritas, //represents the variable of the lat/lng
+            });
+
+            marker.addListener('click', toggleBounce);
+            marker.addListener('click', function () { //to add user event that clicks to open up the info
+                infoWindow.open(map, marker); //this is dependent on the map and marker made prior to it being put into a variable
+            });
+            function toggleBounce() {//function needs to be inside addDropMarker to make the animation function
+                if (marker.getAnimation() !== null) {
+                    marker.setAnimation(null);
+                } else {
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                }
+            }
+
+        }
+
+        addDropMarker();
+
+        // MAP MARKER
+
+
+        //INFORMATION WINDOW
+
+        var infoWindow = new google.maps.InfoWindow({ //create a variable to hold the information window
+            content: "Pizzarita's: The Tai wings here are the ISH, BISH!!!!!"   //add your content
+        });
+
+        // infoWindow.open(map,marker); //opens the information window using the map and marker
+
+        //INFORMATION WINDOW
+
+
+    })();
+
+
+    <!-- Script to show address on map -->
+
+
+</script>
 <script>
     "use strict";
 
 
 
-
         //Get pull for WEATHER API for San Antonio, Texas, US
-        var key = localStorage.getItem("weatherApiKey");
+        var weatherApiKey = localStorage.getItem("weatherApiKey");
         var city = "San Antonio, US";
         var url = "http://api.openweathermap.org/data/2.5/forecast";
 
@@ -73,7 +178,7 @@
             type: "GET", //I WANT TO RETRIEVE INFORMATION
             data: {//THIS IS THE DATA I WANT
                 q: city, //NAME OF THE CITY (this is in a variable)
-                appid: key,//using this format to publish info anonymously
+                appid: weatherApiKey,//using this format to publish info anonymously
                 units: "imperial",//in this unit format
                 cnt: "3"//the number of days
             },
@@ -84,7 +189,7 @@
                 $("#cityName").text(data.city.name);
                 $.each(data.list, function (index, val) {
 
-                    weatherData += "<div>";
+                    weatherData += "<div style='border: 1px solid black;'>";
                     weatherData += "<h2>" + parseInt(val.main.temp_max)+ "/" + parseInt(val.main.temp_min) + "</h2>";
                     weatherData += "<p>" + "Clouds: " + val.clouds.all + "%" + "</p>";
                     weatherData += "<p>" + "Humidity: " + val.main.humidity + "</p>";
@@ -92,7 +197,7 @@
                     weatherData += "<p>" + "Pressure: " + parseInt(val.main.pressure) + "</p>";
                     weatherData += "</div>";
                 });
-                $(".row").html(weatherData);
+                $(".container").html(weatherData);
             }
         })
 
