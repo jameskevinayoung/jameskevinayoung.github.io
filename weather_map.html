@@ -12,10 +12,12 @@
             padding: auto;
         }
         .container{
+            display: inline-flex;
             width: 100%;
             border: 2px solid darkslategrey;
             margin-top: 2em;
             background-color: whitesmoke;
+
         }
         .container:after{
             content: "";
@@ -42,9 +44,7 @@
     <h1>Weather Application</h1>
     <h2 class="location" id="cityName"></h2>
     <section class="container row">
-      <section class="dailyForecast" id="dailyWeather1"></section>
-      <section class="dailyForecast" id="dailyWeather2"></section>
-      <section class="dailyForecast" id="dailyWeather3"></section>
+
     </section>
 
 
@@ -64,15 +64,18 @@
         var key = localStorage.getItem("weatherApiKey");
         var city = "San Antonio, US";
         var url = "http://api.openweathermap.org/data/2.5/forecast";
-        $.ajax({
-            url: url,
-            dataType: "json",
-            type: "GET",
-            data: {
-                q: city,
-                appid: key,
-                units: "imperial",
-                cnt: "3"
+
+
+//JQUERY AJAX PULL ON OPEN WEATHER MAP TO DISPLAY 3 DAYS OF WEATHER
+        $.ajax({//REQUESTING
+            url: url, //FROM THIS URL
+            dataType: "json",//THIS TYPE OF DATA
+            type: "GET", //I WANT TO RETRIEVE INFORMATION
+            data: {//THIS IS THE DATA I WANT
+                q: city, //NAME OF THE CITY (this is in a variable)
+                appid: key,//using this format to publish info anonymously
+                units: "imperial",//in this unit format
+                cnt: "3"//the number of days
             },
             success: function(data) {
                 console.log(data);
@@ -80,6 +83,7 @@
 
                 $("#cityName").text(data.city.name);
                 $.each(data.list, function (index, val) {
+
                     weatherData += "<div>";
                     weatherData += "<h2>" + parseInt(val.main.temp_max)+ "/" + parseInt(val.main.temp_min) + "</h2>";
                     weatherData += "<p>" + "Clouds: " + val.clouds.all + "%" + "</p>";
@@ -88,9 +92,7 @@
                     weatherData += "<p>" + "Pressure: " + parseInt(val.main.pressure) + "</p>";
                     weatherData += "</div>";
                 });
-                $("#dailyWeather1").html(weatherData);
-                $("#dailyWeather2").html(weatherData);
-                $("#dailyWeather3").html(weatherData);
+                $(".row").html(weatherData);
             }
         })
 
