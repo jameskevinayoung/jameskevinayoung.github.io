@@ -1,0 +1,47 @@
+/*navbar*/
+ul{
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 15%;
+    background-color: crimson;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+li a{
+    display: block;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:active{
+    background-color: white;
+    color: crimson;
+}
+li a:hover:not(.active){
+    background-color: white;
+    color: crimson;
+}
+/*navbar*/
+
+
+/*main*/
+
+main{
+    width: 70%;
+
+}
+h1{
+    text-align: center;
+}
+
+hr{
+    width: 60%;
+}
+
+btn{
+    display: inline;
+}
+/*main*/
