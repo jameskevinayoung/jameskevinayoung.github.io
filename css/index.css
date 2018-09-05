@@ -8,8 +8,10 @@ ul {
     background-color: #333;
 }
 
-li {
+li.active {
     float: left;
+    background-color: white;
+    color: crimson;
 }
 
 li a {
@@ -24,16 +26,14 @@ li a:hover {
     background-color: white;
     color: crimson;
 }
-.active {
-    background-color: white;
-}
+
 
 /*navbar*/
 
 
 /*main*/
 
-main{
+#homepage{
     width: 100%;
 
 }
@@ -66,3 +66,13 @@ img {
     text-align: center;
 }
 /*main*/
+
+
+/*ABOUT.HTML*/
+
+.about{
+
+    width: 200px;
+    height: 200px;
+
+}
