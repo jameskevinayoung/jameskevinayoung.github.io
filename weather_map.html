@@ -101,6 +101,7 @@
 
                     weatherData += "<div style='border: 1px solid black; width: 80%;'>";//this div will be styled the same for each set of items
                     weatherData += "<h2>" + parseInt(val.main.temp_max)+ "°/" + parseInt(val.main.temp_min) + "°</h2>";//take the integers of the  max and min temperatures
+                    weatherData += "<img src='"+val.weather.icon+"'>";
                     weatherData += "<p>" + "Clouds: " + val.clouds.all + "%" + "</p>";//this will only show cloud conditions; needs to be editable
                     weatherData += "<p>" + "Humidity: " + val.main.humidity + "</p>";//humdity
                     weatherData += "<p>" + "Wind: " + val.wind.speed+" mph"+"</p>";//wind speed
