@@ -2,16 +2,14 @@
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
     overflow: hidden;
     background-color: #333;
 }
 
-li.active {
+li {
     float: left;
-    background-color: white;
-    color: crimson;
 }
 
 li a {
@@ -28,13 +26,15 @@ li a:hover {
 }
 
 
+
+
 /*navbar*/
 
 
 /*main*/
 
-#homepage{
-    width: 100%;
+main{
+    width: 70%;
 
 }
 h1{
