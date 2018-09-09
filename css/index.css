@@ -24,11 +24,7 @@
     background-color: white;
     color: crimson;
 }
-
-
-
-
-/*navbar*/
+/*-----------------------------*/
 
 
 /*main*/
@@ -61,7 +57,7 @@ img {
     margin: auto;
     text-align: center;
 }
-/**/
+/*------------------------------*/
 
 
 /*ABOUT.HTML*/
@@ -76,9 +72,11 @@ img {
 
 
 
-/**/
+/*--------------------------*/
 
-/*RESUMECV*/
+/*RESUMECV - CARD TEMPLATES*/
+
+/*FIRST CARD*/
 
 /*TECH SKILLS SECTION*/
 
@@ -111,32 +109,13 @@ img {
 }
 
 
-/*EDUCATION*/
-
-.educationList{
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-}
-
-.educationDescription{
-    diplay: block;
-    text-align: left;
-}
-
-
-/*CARD TEMPLATES*/
-
-/*FIRST CARD*/
-
 
 
 #f1_container {
     position: relative;
     margin: 10px auto;
     width: 550px;
-    height: 200px;
+    height: 250px;
     z-index: 1;
 }
 #f1_container {  /* entire container, keeps perspective */
@@ -175,11 +154,31 @@ img {
 
 /*SECOND CARD*/
 
+
+/*EDUCATION*/
+
+.educationList{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.educationDescription{
+    diplay: block;
+    text-align: left;
+}
+
+#f2Header{
+    text-align: center;
+}
+
+
 #f2_container {
     position: relative;
     margin: 10px auto;
     width: 550px;
-    height: 200px;
+    height: 250px;
     z-index: 1;
 }
 #f2_container {
@@ -210,3 +209,7 @@ img {
     text-align: center;
     background-color: #aaa;
 }
+
+
+
+/*-----------------------------*/
