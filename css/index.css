@@ -27,6 +27,13 @@
 /*-----------------------------*/
 
 
+
+
+#computer-jumbotron{}
+
+
+/*-----------------------------*/
+
 /*main*/
 
 h1{
@@ -36,7 +43,7 @@ h1{
 hr{
     width: 100%;
 }
-img {
+#headShot {
     border-radius: 50%;
     width: 30%;
     height: 30%;
