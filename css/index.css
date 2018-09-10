@@ -29,7 +29,11 @@
 
 
 
-#computer-jumbotron{}
+#computer-jumbotron{
+
+    width: 100%;
+    height: 25%;
+}
 
 
 /*-----------------------------*/
