@@ -117,7 +117,7 @@ hr{
 #f1Header{
     text-align: center;
     padding: 0 auto;
-
+    color: #ff4500;
 
 }
 
@@ -131,9 +131,10 @@ hr{
 #f1_container {
     position: relative;
     margin: 10px auto;
-    width: 550px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     z-index: 1;
+
 }
 #f1_container {  /* entire container, keeps perspective */
 
@@ -146,6 +147,7 @@ hr{
     transform-style: preserve-3d;
     transition: all 1.0s linear;
     border: 1px solid lightgrey;
+
 }
 #f1_container:hover #f1_card {  	/* flip the pane when hovered */
 
@@ -188,14 +190,16 @@ hr{
 
 #f2Header{
     text-align: center;
+    padding: 0 auto;
+    color: #ff4500;
 }
 
 
 #f2_container {
     position: relative;
     margin: 10px auto;
-    width: 550px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     z-index: 1;
 }
 #f2_container {
