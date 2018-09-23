@@ -1,6 +1,8 @@
 /*navbar*/
 
-
+nav{
+    color: ;
+}
 
 
 /*-----------------------------*/
@@ -12,6 +14,28 @@
     margin-bottom: 2rem;
     background-color: #e9ecef;
     border-radius: .3rem;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-md-4{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.display-3{
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: left;
 }
 
 /*-----------------------------*/
